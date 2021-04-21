@@ -1,0 +1,17 @@
+.grid {
+    display: grid;
+    grid-template-areas:    "left top-right"
+                            "left bottom-right";
+    grid-template-columns: 58% 42%;
+    grid-column-gap: 0;
+    grid-template-rows: 265px 265px;
+}
+
+.grid__left { grid-area: left; }
+.grid__top-right { grid-area: top-right; }
+.grid__bottom-right { grid-area: bottom-right; }
+
+.banner__container {
+    .container_wide();
+    .grid();
+}
