@@ -1,0 +1,37 @@
+@color-form-button: #D7D7D7;
+@color-form-button-hover: #b1b1b1;
+
+.form {
+    display: inline-block;  
+
+    &__input {
+        .text-common();
+        width: 444px;
+        height: 47px;
+        background: #EBEBEB;
+        padding-left: 15px;
+        outline: none;
+        border: none;
+        font-size: 16px;
+        line-height: 1.1875em;
+        color: @color-text-dark;
+    }
+
+    &__button {
+        .site-link();
+        width: 176px;
+        height: 47px;
+        vertical-align: bottom;
+        margin-left: -4px;
+        color: @color-text-dark;
+        background: @color-form-button;
+        border: none;
+        outline: none;
+        transition: background-color ease .2s;
+
+        &:hover {
+            cursor: pointer;
+            background: @color-form-button-hover;
+        }
+    }
+}
