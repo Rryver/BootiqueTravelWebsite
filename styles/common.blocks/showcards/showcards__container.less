@@ -1,12 +1,13 @@
-.infos__container {
+.showcards__container {
     .container();
     display: grid;
+    margin-bottom: 98px;
 
     grid-template-areas:    "left top-right"
                             "left bottom-right";
     grid-template-columns: 49% 46%;
     grid-column-gap: 60px;
-    grid-template-rows: 252px 252px;
+    grid-template-rows: 252px minmax(252px, auto);
     grid-row-gap: 50px;
 
     &_position_left { grid-area: left; }

@@ -1,0 +1,31 @@
+.showcard-product {
+    display: flex;
+
+    &__left {
+        display: inline-block;
+        position: relative;
+        width: 50%;
+    }
+
+    &__image {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
+
+    &__name {
+        display: inline-block;
+        position: absolute;
+        bottom: 32px;
+        left: 26px;
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 50%;
+        padding: 20px 15px 34px 21px;
+    }
+}
