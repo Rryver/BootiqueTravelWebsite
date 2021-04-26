@@ -1,0 +1,21 @@
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 66px;
+
+    .top__sign-links > &__link {
+        margin-right: 41px;
+    }
+
+    .top__sign-links > &__link:last-child {
+        margin-right: 0;
+    }
+
+    &__link {
+        .site-link();
+        display: inline-block;
+        color: @color-text-light-grey;
+    }
+}

@@ -1,0 +1,49 @@
+.text_letter-spacing_true {
+    letter-spacing: .25em;
+}
+
+.text-common {
+    font-family: @font-family-common;
+    font-weight: @font-weight-normal;
+    font-style: normal;
+}
+
+.text-captions {
+    font-family: @font-family-caption;
+    font-weight: @font-weight-normal;
+    font-style: italic;
+}
+
+.heading_big {
+    .text-captions();
+    font-size: 52px;
+    line-height: 69px;
+}
+
+.heading_medium {
+    .text-captions();
+    font-size: 32px;
+    line-height: 43px
+}
+
+.heading_small {
+    .text-captions();
+    font-size: 20px;
+    line-height: 27px;
+}
+
+.text_extra-small {
+
+}
+
+.site-link {
+    .text-common();
+    .text_letter-spacing_true();
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
