@@ -1,6 +1,26 @@
 .footer {
     margin-bottom: 92px;
 
-    &__bottom {}
     &__subscribe {}
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 80px;
+        padding: 0 43px 0 39px;
+    }
+
+    &__copyright, &__author {
+        .text-common();
+        font-size: 14px;
+        line-height: 1.2143em;
+        color: @color-text-light-grey;
+    }
+
+    &__social {}
+}
+
+.footer.container {
+    max-width: 1170px;
+    padding: 0;
 }

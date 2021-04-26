@@ -151,7 +151,7 @@ section {
   display: inline-block;
   color: #828282;
 }
-.banner__container {
+.banner__grid-container {
   max-width: 1440px;
   margin: 0 auto;
   display: grid;
