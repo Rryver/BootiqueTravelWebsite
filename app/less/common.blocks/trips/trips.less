@@ -1,0 +1,19 @@
+.trips {
+    margin-top: 120px;
+
+    &__list {}
+
+    &__item {
+        display: inline-block;
+
+
+        &:nth-child(odd) {
+            margin-right: 25px;
+            margin-bottom: 97px;
+        }
+
+        &:nth-last-of-type(-n+2) {
+            margin-bottom: 80px;
+        }
+    }
+}
