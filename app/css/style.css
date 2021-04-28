@@ -846,6 +846,117 @@ body {
   height: 1px;
   background: #BDBDBD;
 }
+.trip__grid-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  margin-top: 85px;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "main sidebar";
+  -ms-grid-columns: 1fr 30px 370px;
+  grid-template-columns: 1fr 370px;
+  grid-column-gap: 30px;
+}
+.trip__grid-container__position__main {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: main;
+}
+.trip__grid-container__position__sidebar {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: sidebar;
+}
+.images-plugin {
+  margin-bottom: 37px;
+}
+.images-plugin__container {
+  position: relative;
+  width: 100%;
+  height: 122px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.images-plugin__top {
+  position: relative;
+  margin-bottom: 5px;
+}
+.images-plugin__slides {
+  position: relative;
+}
+.images-plugin__slide {
+  display: none;
+  height: 450px;
+}
+.images-plugin__slide_visblile {
+  display: block;
+}
+.images-plugin__btn-prev,
+.images-plugin__btn-next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+}
+.images-plugin__btn-prev:hover,
+.images-plugin__btn-next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.images-plugin__btn-next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.images-plugin__images-list {
+  display: block;
+  position: absolute;
+  white-space: nowrap;
+}
+.images-plugin__images-item {
+  display: inline-block;
+  width: 22%;
+  height: auto;
+  scroll-snap-align: start;
+  margin-right: 2px;
+  vertical-align: top;
+  opacity: 0.7;
+  -webkit-transition: opacity ease 0.1s;
+  -o-transition: opacity ease 0.1s;
+  transition: opacity ease 0.1s;
+}
+.images-plugin__images-item:last-child {
+  margin-right: 0;
+}
+.images-plugin__images-item:hover {
+  opacity: 1;
+}
+.images-plugin__item_is-active {
+  opacity: 1;
+}
+.images-plugin__image {
+  width: 100%;
+}
+.images-plugin__image:hover {
+  cursor: pointer;
+}
+.images-plugin__image_big {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+.images-plugin__image_big:hover {
+  cursor: default;
+}
 .footer {
   margin-bottom: 92px;
 }

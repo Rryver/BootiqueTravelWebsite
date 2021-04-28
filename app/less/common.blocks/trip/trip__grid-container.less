@@ -1,0 +1,25 @@
+.trip__grid-container {
+    .container();
+    margin-top: 85px;
+    display: grid;
+
+    grid-template-areas:    "main sidebar";
+    grid-template-columns: 1fr 370px;
+    grid-column-gap: 30px;
+
+    &__position__main { grid-area: main }
+    &__position__sidebar { grid-area: sidebar; }
+}
+
+
+
+//@media  {
+//    grid-template-areas:    "main"
+//                            "sidebar";
+//
+//    grid-template-columns: 1fr;
+//    grid-column-gap: 0;
+//
+//    grid-template-rows: auto;
+//    grid-row-gap: 50px;
+//}

@@ -53,7 +53,7 @@
 
     <section class="trip">
       <div class="trip__grid-container">
-        <div class="trip__content">
+        <div class="trip__content trip__grid-container__position__main">
           <div class="trip__text-container">
             <p class="trip__text">
               A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring
@@ -69,10 +69,62 @@
               existence in this spot, which was created for the bliss of souls like mine.
             </p>
           </div>
-          div.trip__images-plugin.images-plugin>(div.images-plugin__top>img.images-plugin__image.images-plugin__image_big)+ul.
+
+          <div class="trip__images-plugin images-plugin">
+            <div class="images-plugin__top">
+              <div class="images-plugin__slides">
+                <div class="images-plugin__slide images-plugin__slide_visblile">
+                  <img class="images-plugin__image images-plugin__image_big" src="images/pollside-bar.png" alt="image">
+                </div>
+                <div class="images-plugin__slide">
+                  <img class="images-plugin__image images-plugin__image_big" src="images/room-double-01.png" alt="image">
+                </div>
+                <div class="images-plugin__slide">
+                  <img class="images-plugin__image images-plugin__image_big" src="images/room-twin-01.png" alt="image">
+                </div>
+                <div class="images-plugin__slide">
+                  <img class="images-plugin__image images-plugin__image_big" src="images/restaurant.png" alt="image">
+                </div>
+                <div class="images-plugin__slide">
+                  <img class="images-plugin__image images-plugin__image_big" src="images/room-single-01.png" alt="image">
+                </div>
+              </div>
+              <a class="images-plugin__btn-prev" onclick="plusSlide(-1)">&#10094</a>
+              <a class="images-plugin__btn-next" onclick="plusSlide(1)">&#10095</a>
+            </div>
+
+            <div class="images-plugin__container">
+              <ul class="images-plugin__images-list">
+                <li class="images-plugin__images-item images-plugin__item_is-active" onclick="showSelectedSlide(this)">
+                  <img class="images-plugin__image images-plugin__image_small" src="images/pollside-bar.png" alt="image">
+                </li>
+                <li class="images-plugin__images-item" onclick="showSelectedSlide(this)">
+                  <img class="images-plugin__image images-plugin__image_small" src="images/room-double-01.png" alt="image">
+                </li>
+                <li class="images-plugin__images-item" onclick="showSelectedSlide(this)">
+                  <img class="images-plugin__image images-plugin__image_small" src="images/room-twin-01.png" alt="image">
+                </li>
+                <li class="images-plugin__images-item" onclick="showSelectedSlide(this)">
+                  <img class="images-plugin__image images-plugin__image_small" src="images/restaurant.png" alt="image">
+                </li>
+                <li class="images-plugin__images-item" onclick="showSelectedSlide(this)">
+                  <img class="images-plugin__image images-plugin__image_small" src="images/room-single-01.png" alt="image">
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="trip__text-container">
+            <p class="trip__text">
+              A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring
+              which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which
+              was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the
+              exquisite sense of mere tranquil existence.
+            </p>
+          </div>
         </div>
 
-        <aside class="trip__sidebar">
+        <aside class="trip__sidebar trip__grid-container__position__sidebar">
           <div class="trip__trip-review trip-review">
             <div class="trip-review__header">
               <img class="trip-review__image" src="images/testimonials__author-01.svg" alt="person-image">
@@ -89,10 +141,10 @@
             </div>
             <div class="trip-review__reviews-slider reviews-slider">
               <div class="reviews-slider__prev">
-                <img class="reviews-slider__image" src="" alt="">
+                <img class="reviews-slider__image" src="images/icons/arrow-left.svg" alt="">
               </div>
               <div class="reviews-slider__next">
-                <img class="reviews-slider__image" src="" alt="">
+                <img class="reviews-slider__image" src="images/icons/arrow-right.svg" alt="">
               </div>
             </div>
           </div>
