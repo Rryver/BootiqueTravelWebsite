@@ -30,12 +30,12 @@
     <ul class="nav-menu__list">
       <li class="nav-menu__item"><a class="nav-menu__link" href="index.html">Home</a></li>
       <li class="nav-menu__item"><a class="nav-menu__link" href="travel.html">Travel</a></li>
-      <li class="nav-menu__link"><a class="nav-menu__item" href="style.html">Life Style</a></li>
-      <li class="nav-menu__link"><a class="nav-menu__item" href="#">Soul</a></li>
-      <li class="nav-menu__link"><a class="nav-menu__item" href="#">About</a></li>
-      <li class="nav-menu__link"><a class="nav-menu__item" href="#">Review</a></li>
-      <li class="nav-menu__link"><a class="nav-menu__item" href="#">Stories</a></li>
-      <li class="nav-menu__link"><a class="nav-menu__item" href="#">Contact</a></li>
+      <li class="nav-menu__item"><a class="nav-menu__link" href="style.html">Life Style</a></li>
+      <li class="nav-menu__item"><a class="nav-menu__link" href="#">Soul</a></li>
+      <li class="nav-menu__item"><a class="nav-menu__link" href="#">About</a></li>
+      <li class="nav-menu__item"><a class="nav-menu__link" href="#">Review</a></li>
+      <li class="nav-menu__item"><a class="nav-menu__link" href="#">Stories</a></li>
+      <li class="nav-menu__item"><a class="nav-menu__link" href="#">Contact</a></li>
     </ul>
   </nav>
 </header>
@@ -88,6 +88,9 @@
                 <div class="images-plugin__slide">
                   <img class="images-plugin__image images-plugin__image_big" src="images/room-single-01.png" alt="image">
                 </div>
+                <div class="images-plugin__slide">
+                  <img class="images-plugin__image images-plugin__image_big" src="images/room-single-01.png" alt="image">
+                </div>
               </div>
               <a class="images-plugin__btn-prev" onclick="plusSlide(-1)">&#10094</a>
               <a class="images-plugin__btn-next" onclick="plusSlide(1)">&#10095</a>
@@ -110,17 +113,29 @@
                 <li class="images-plugin__images-item" onclick="showSelectedSlide(this)">
                   <img class="images-plugin__image images-plugin__image_small" src="images/room-single-01.png" alt="image">
                 </li>
+                <li class="images-plugin__images-item" onclick="showSelectedSlide(this)">
+                  <img class="images-plugin__image images-plugin__image_small" src="images/room-single-01.png" alt="image">
+                </li>
               </ul>
             </div>
           </div>
 
           <div class="trip__text-container">
             <p class="trip__text">
-              A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring
-              which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which
-              was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the
-              exquisite sense of mere tranquil existence.
+              A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which
+              I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created
+              for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of
+              mere tranquil existence.
             </p>
+          </div>
+
+          <div class="trip__video video">
+            <div class="video__player-container">
+              <video src="#" class="video__player"></video>
+            </div>
+            <div class="video__alt">
+              <img src="images/icons/movies.svg" alt="" class="video__alt-icon">
+            </div>
           </div>
         </div>
 
@@ -128,27 +143,29 @@
           <div class="trip__trip-review trip-review">
             <div class="trip-review__header">
               <img class="trip-review__image" src="images/testimonials__author-01.svg" alt="person-image">
-              <span class="trip-review__name">James thomas</span>
-              <span class="trip-review__company">Some Company Name</span>
+              <div class="trip-review__person-info">
+                <a class="trip-review__name">James thomas</a><br>
+                <span class="trip-review__company">Some Company Name</span>
+              </div>
             </div>
             <div class="trip-review__content">
-              <img class="quotes" src="images/icons/quotes.svg" alt="">
+              <img class="trip-review__quotes" src="images/icons/quotes.svg" alt="">
               <p class="trip-review__text">
                 One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed
                 in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his
                 head a little he could see.
               </p>
             </div>
-            <div class="trip-review__reviews-slider reviews-slider">
-              <div class="reviews-slider__prev">
-                <img class="reviews-slider__image" src="images/icons/arrow-left.svg" alt="">
+            <div class="trip-review__reviews-switch reviews-switch">
+              <div class="reviews-switch__prev">
+                <img class="reviews-switch__image" src="images/icons/arrow-left.svg" alt="previous">
               </div>
-              <div class="reviews-slider__next">
-                <img class="reviews-slider__image" src="images/icons/arrow-right.svg" alt="">
+              <div class="reviews-switch__next">
+                <img class="reviews-switch__image" src="images/icons/arrow-right.svg" alt="next">
               </div>
             </div>
+            <a class="trip__button" href="#">Book this trip now</a>
           </div>
-          <a class="trip__button" href="#">Book this trip now</a>
         </aside>
       </div>
     </section>
@@ -158,9 +175,9 @@
       <div class="split-line"></div>
     </div>
 
-
     <section class="trips">
       <div class="container trips__container">
+        <h2 class="trips__title heading heading_big">You might be interested on these trips too</h2>
         <ul class="trips__list">
           <li class="trips__item">
             <div class="showcards__showcard-travel showcard-travel showcards__container_position_left">

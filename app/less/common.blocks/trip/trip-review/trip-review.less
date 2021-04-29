@@ -1,0 +1,52 @@
+@trip-review-bg-color: #F8F8F8;
+
+.trip-review {
+    padding: 30px 26px 36px 27px;
+    background: @trip-review-bg-color;
+
+    &__header {}
+    &__image {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        margin-right: 16px;
+    }
+
+    &__person-info {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    &__name {
+        .site-link();
+        display: inline-block;
+        font-size: 14px;
+        line-height: 1.2143em;
+        color: @color-theme-dark-grey;
+    }
+    &__company {
+        .text-common();
+        display: inline-block;
+        font-size: 14px;
+        line-height: 1.2143em;
+        color: @color-theme-dark-grey;
+    }
+
+    &__content {
+        position: relative;
+        margin-top: 14px;
+    }
+
+    &__quotes {
+        .quotes();
+    }
+
+    &__text {
+        .text-captions();
+        font-size: 19px;
+        line-height: 1.3158em;
+        color: @color-text-grey;
+    }
+
+    &__reviews-switch {}
+}
