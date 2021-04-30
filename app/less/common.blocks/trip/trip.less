@@ -1,10 +1,26 @@
 .trip {
+    position: relative;
 
     &__sidebar {}
-    &__trip-review {}
+
+    &__trip-review {
+        position: sticky;
+        top: 15px;
+        margin-bottom: 74px;
+    }
+
     &__content {}
     &__text-container {}
     &__text {}
     &__images-plugin {}
     &__video {}
+
+    &__button {
+        .link-button();
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-top: 72px;
+    }
 }

@@ -1,6 +1,3 @@
-@color-form-button: #D7D7D7;
-@color-form-button-hover: #b1b1b1;
-
 .form {
     display: inline-block;  
 
@@ -18,20 +15,10 @@
     }
 
     &__button {
-        .site-link();
+        .link-button();
+        display: inline-block;
         width: 176px;
-        height: 47px;
         vertical-align: bottom;
         margin-left: -4px;
-        color: @color-text-dark;
-        background: @color-form-button;
-        border: none;
-        outline: none;
-        transition: background-color ease .2s;
-
-        &:hover {
-            cursor: pointer;
-            background: @color-form-button-hover;
-        }
     }
 }

@@ -108,6 +108,41 @@ body {
   top: -9px;
   left: -19px;
 }
+.link-button {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.25em;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 305px;
+  height: 47px;
+  color: #4F4F4F;
+  background: #D7D7D7;
+  border: none;
+  outline: none;
+  -webkit-transition: background-color ease 0.2s;
+  -o-transition: background-color ease 0.2s;
+  transition: background-color ease 0.2s;
+}
+.link-button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.link-button:hover {
+  cursor: pointer;
+  background: #b1b1b1;
+}
 .text_letter-spacing_true {
   letter-spacing: 0.25em;
 }
@@ -862,6 +897,52 @@ body {
   height: 1px;
   background: #BDBDBD;
 }
+.trip {
+  position: relative;
+}
+.trip__trip-review {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 15px;
+  margin-bottom: 74px;
+}
+.trip__button {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.25em;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  width: 305px;
+  height: 47px;
+  color: #4F4F4F;
+  background: #D7D7D7;
+  border: none;
+  outline: none;
+  -webkit-transition: background-color ease 0.2s;
+  -o-transition: background-color ease 0.2s;
+  transition: background-color ease 0.2s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  margin-top: 72px;
+}
+.trip__button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.trip__button:hover {
+  cursor: pointer;
+  background: #b1b1b1;
+}
 .trip__grid-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -1006,6 +1087,7 @@ body {
   width: 100px;
   height: 100px;
   margin-right: 16px;
+  vertical-align: middle;
 }
 .trip-review__person-info {
   display: inline-block;
@@ -1054,6 +1136,33 @@ body {
   font-size: 19px;
   line-height: 1.3158em;
   color: #828282;
+}
+.reviews-switch {
+  display: block;
+  text-align: right;
+  margin-top: 9px;
+}
+.reviews-switch__prev,
+.reviews-switch__next {
+  display: inline-block;
+  text-align: center;
+  padding: 2px 5px;
+  background: #FFFFFF;
+  outline: none;
+  border: none;
+  -webkit-transition: all ease 0.1s;
+  -o-transition: all ease 0.1s;
+  transition: all ease 0.1s;
+}
+.reviews-switch__prev:hover,
+.reviews-switch__next:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+          transform: scale(1.3);
+}
+.reviews-switch__next {
+  margin-left: 3px;
 }
 .footer {
   margin-bottom: 92px;
@@ -1128,10 +1237,17 @@ body {
   font-size: 12px;
   line-height: 14px;
   text-transform: uppercase;
-  width: 176px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 305px;
   height: 47px;
-  vertical-align: bottom;
-  margin-left: -4px;
   color: #4F4F4F;
   background: #D7D7D7;
   border: none;
@@ -1139,6 +1255,10 @@ body {
   -webkit-transition: background-color ease 0.2s;
   -o-transition: background-color ease 0.2s;
   transition: background-color ease 0.2s;
+  display: inline-block;
+  width: 176px;
+  vertical-align: bottom;
+  margin-left: -4px;
 }
 .form__button:hover {
   text-decoration: underline;
