@@ -1,0 +1,13 @@
+.popular-producers__grid-container {
+    .container();
+    display: grid;
+
+    grid-template-areas: "main sidebar";
+    grid-template-columns: 1fr 370px;
+
+    grid-column-gap: 30px;
+
+
+    &_position_main { grid-area: main; }
+    &_position_sidebar { grid-area: sidebar; }
+}

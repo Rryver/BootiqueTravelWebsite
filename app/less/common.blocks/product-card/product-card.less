@@ -10,15 +10,40 @@
     }
 
     &__name {
+        .site-link();
         display: block;
         width: 100%;
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: 1.643em;
+        color: @color-text-grey;
     }
 
     &__producer {
+        .text-common();
         display: block;
+        margin-top: 21px;
+        font-size: 14px;
+        line-height: 1.214em;
+        color: @color-text-grey;
     }
 
-    &__price {}
-    &__discount-price {}
-    &__price_discount {}
+}
+
+.product-card__price {
+    .text-common();
+    display: inline-block;
+    margin-top: 21px;
+    font-size: 14px;
+    line-height: 1.214em;
+    color: @color-text-grey;
+}
+
+.product-card__discount-price {
+    .product-card__price();
+    margin-left: 9px;
+}
+
+.product-card__price_discount {
+    text-decoration: line-through;
 }

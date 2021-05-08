@@ -1,0 +1,45 @@
+.card-producer {
+    display: flex;
+    flex-direction: row;
+    height: 404px;
+
+
+    &__image-container {
+        display: inline-block;
+        width: 300px;
+        height: 100%;
+        background: #E0E0E0;
+    }
+
+    &__content {
+        display: inline-block;
+        width: 470px;
+        padding: 17px 22px 20px 19px;
+        background: @color-theme-light;
+
+    }
+
+    &__name {
+        color: @color-text-grey;
+    }
+
+    &__text {
+        .text-common();
+        display: block;
+        margin-top: 35px;
+        font-size: 16px;
+        line-height: 1.625em;
+        color: @color-text-dark;
+    }
+
+    &__link {
+        .site-link();
+        display: inline-block;
+        margin-top: 35px;
+        color: @color-text-strong-dark;
+    }
+
+    &__popular-products-mini {
+        margin-top: 52px;
+    }
+}
