@@ -1,0 +1,51 @@
+.market-filter {
+
+    &__title {
+        .text-common();
+        .text_letter-spacing_true();
+        font-size: 14px;
+        line-height: 1.214em;
+        color: @color-text-dark;
+        text-transform: uppercase;
+    }
+
+    &__filters-list {
+        margin-top: 20px;
+    }
+
+    &__filters-item {
+        .text-common();
+        padding: 8px 0;
+        margin-bottom: 4px;
+        font-size: 16px;
+        line-height: 1.1875em;
+        color: @color-text-grey;
+
+        //background: #FFFFFF;
+        //border-radius: 5px;
+        //transition: all ease-in .05s;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+            //background: @color-theme-light;
+        }
+    }
+
+    &__button {
+        display: block;
+        border: none;
+        outline: none;
+        background: #FFFFFF;
+        margin: 18px 0 0;
+        padding: 10px 0;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

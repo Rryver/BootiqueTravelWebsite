@@ -1,14 +1,26 @@
 .card-producer {
     display: flex;
+    position: relative;
     flex-direction: row;
-    height: 404px;
+    height: 444px;
 
 
     &__image-container {
         display: inline-block;
+        position: relative;
         width: 300px;
         height: 100%;
         background: #E0E0E0;
+    }
+
+    &__icon-avatar-alt {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
     }
 
     &__content {
@@ -25,7 +37,12 @@
 
     &__text {
         .text-common();
-        display: block;
+        display: -webkit-box;
+        overflow: hidden;
+        //text-overflow: ellipsis;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        height: 74px;
         margin-top: 35px;
         font-size: 16px;
         line-height: 1.625em;
