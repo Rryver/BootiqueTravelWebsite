@@ -1,15 +1,458 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="styles/bundles/normalize.css">
-    <link rel="stylesheet" href="styles/bundles/project.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
 
+<header class="header">
+  <div class="header__top top">
+    <a class="top__link" href="#">Faq</a>
+    <h2 class="top__logo logo heading_medium"><a class="logo__link" href="#">Botique Travel Website</a></h2>
+    <div class="top__sign-links">
+      <a class="top__link" href="#">Sign Up</a>
+      <a class="top__link" href="#">Sign In</a>
+    </div>
+  </div>
+  <nav class="header__nav-menu nav-menu">
+    <ul class="nav-menu__list">
+      <li class="nav-menu__item"><a class="nav-menu__link" href="index.html">Home</a></li>
+      <li class="nav-menu__item"><a class="nav-menu__link" href="travel.html">Travel</a></li>
+      <li class="nav-menu__item"><a class="nav-menu__link" href="style.html">Life Style</a></li>
+      <li class="nav-menu__item"><a class="nav-menu__link" href="#">Soul</a></li>
+      <li class="nav-menu__item"><a class="nav-menu__link" href="#">About</a></li>
+      <li class="nav-menu__item"><a class="nav-menu__link" href="#">Review</a></li>
+      <li class="nav-menu__item"><a class="nav-menu__link" href="#">Stories</a></li>
+      <li class="nav-menu__item"><a class="nav-menu__link" href="#">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
-<script src="js/project.js"></script>
+
+<div class="wrapper">
+  <main class="main">
+    <section class="banner">
+      <div class="banner__container">
+        <h2 class="banner__title heading_big">Life Style Products</h2>
+        <span class="banner__parent-page">Category name</span>
+      </div>
+    </section>
+
+    <section class="page-preview">
+      <div class="page-preview__container">
+        <p class="page-preview__text">
+          Product story goes here. A wonderful serenity has taken possession of my entire soul, like these sweet
+          mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in
+          this spot, which was created for the bliss of souls like mine. A wonderful serenity has taken possession
+          of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone,
+          and feel the charm of existence in this spot, which was created for the bliss of souls like mine.
+        </p>
+        <p class="page-preview__text">
+          A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which
+          I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created
+          for the bliss of souls like mine.
+        </p>
+      </div>
+    </section>
+
+
+    <section class="style-product">
+      <div class="style-product__container">
+        <div class="style-product__content">
+          <div class="style-product__images-plugin images-plugin">
+            <div class="images-plugin__top">
+              <div class="images-plugin__slides">
+                <div class="images-plugin__slide images-plugin__slide_visblile">
+                  <img class="images-plugin__image images-plugin__image_big" src="images/pollside-bar.png" alt="image">
+                </div>
+                <div class="images-plugin__slide">
+                  <img class="images-plugin__image images-plugin__image_big" src="images/room-double-01.png"
+                       alt="image">
+                </div>
+                <div class="images-plugin__slide">
+                  <img class="images-plugin__image images-plugin__image_big" src="images/room-twin-01.png" alt="image">
+                </div>
+                <div class="images-plugin__slide">
+                  <img class="images-plugin__image images-plugin__image_big" src="images/restaurant.png" alt="image">
+                </div>
+                <div class="images-plugin__slide">
+                  <img class="images-plugin__image images-plugin__image_big" src="images/room-single-01.png"
+                       alt="image">
+                </div>
+                <div class="images-plugin__slide">
+                  <img class="images-plugin__image images-plugin__image_big" src="images/room-single-01.png"
+                       alt="image">
+                </div>
+              </div>
+              <a class="images-plugin__btn-prev" onclick="plusSlide(-1)">&#10094</a>
+              <a class="images-plugin__btn-next" onclick="plusSlide(1)">&#10095</a>
+            </div>
+
+            <div class="images-plugin__container">
+              <ul class="images-plugin__images-list">
+                <li class="images-plugin__images-item images-plugin__item_is-active" onclick="showSelectedSlide(this)">
+                  <img class="images-plugin__image images-plugin__image_small" src="images/pollside-bar.png"
+                       alt="image">
+                </li>
+                <li class="images-plugin__images-item" onclick="showSelectedSlide(this)">
+                  <img class="images-plugin__image images-plugin__image_small" src="images/room-double-01.png"
+                       alt="image">
+                </li>
+                <li class="images-plugin__images-item" onclick="showSelectedSlide(this)">
+                  <img class="images-plugin__image images-plugin__image_small" src="images/room-twin-01.png"
+                       alt="image">
+                </li>
+                <li class="images-plugin__images-item" onclick="showSelectedSlide(this)">
+                  <img class="images-plugin__image images-plugin__image_small" src="images/restaurant.png" alt="image">
+                </li>
+                <li class="images-plugin__images-item" onclick="showSelectedSlide(this)">
+                  <img class="images-plugin__image images-plugin__image_small" src="images/room-single-01.png"
+                       alt="image">
+                </li>
+                <li class="images-plugin__images-item" onclick="showSelectedSlide(this)">
+                  <img class="images-plugin__image images-plugin__image_small" src="images/room-single-01.png"
+                       alt="image">
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="style-product__text">
+            A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which
+            I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created
+            for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of
+            mere tranquil existence.
+          </p>
+
+          <div class="style-product__add-to-cart add-to-cart">
+            <span class="add-to-cart__price">$450</span>
+            <form action="" class="add-to-cart__quantity">
+              <label class="add-to-cart__label" for="add-to-cart__input">Quantity</label>
+              <input class="add-to-cart__input" id="add-to-cart__input" type="number">
+              <button class="add-to-cart__button">Add to Cart</button>
+            </form>
+          </div>
+        </div>
+
+        <aside class="style-product__sidebar">
+          <div class="style-product__producer-short-info producer-info-card">
+            <div class="producer-info-card__avatar">
+              <img class="producer-info-card__avatar-image" src="images/icons/avatar-alt.svg" alt="">
+            </div>
+            <span class="producer-info-card__producer-name heading_small">Mr. Harka Gurung</span>
+            <a class="producer-info-card__link">Popular products</a>
+            <div class="producer-info-card__content">
+              <p class="producer-info-card__text">
+                A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which
+                I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created
+                for the bliss of souls like mine
+              </p>
+              <p class="producer-info-card__text">
+                A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which
+                I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created
+                for the bliss of souls like mine. A wonderful serenity has taken possession of my entire soul, like
+                these sweet mornings of spring which I enjoy with my whole heart.
+              </p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+
+    <div class="container">
+      <div class="split-line split-line_margin_common"></div>
+    </div>
+
+    <section class="short-gallery-products">
+      <div class="container">
+        <h2 class="short-gallery-products__title heading_big">More products by Arun Magar</h2>`
+        <div class="short-gallery-products__content">
+          <ul class="short-gallery-products__products-list">
+            <li class="short-gallery-products__products-item product-card">
+              <img class="product-card__image" src="images/product-card--image.png" alt="product-image">
+              <a class="product-card__name">This is product’s name</a>
+              <span class="product-card__producer">Crafted by - Arun Magar</span>
+              <span class="product-card__price">$560</span>
+            </li>
+            <li class="short-gallery-products__products-item product-card">
+              <img class="product-card__image" src="images/product-card--image.png" alt="product-image">
+              <a class="product-card__name">This is product’s name a quite long one</a>
+              <span class="product-card__producer">Crafted by - Arun Magar</span>
+              <span class="product-card__price">$5560</span>
+            </li>
+            <li class="short-gallery-products__products-item product-card">
+              <img class="product-card__image" src="images/product-card--image.png" alt="product-image">
+              <a class="product-card__name">This is product’s name</a>
+              <span class="product-card__producer">Crafted by - Arun Magar</span>
+              <span class="product-card__price">$99</span>
+            </li>
+            <li class="short-gallery-products__products-item product-card">
+              <img class="product-card__image" src="images/product-card--image.png" alt="product-image">
+              <a class="product-card__name">Product with discount</a>
+              <span class="product-card__producer">Crafted by - Arun Magar</span>
+              <span class="product-card__price product-card__price_discount">$560</span>
+              <span class="product-card__discount-price">$450</span>
+            </li>
+          </ul>
+          <a href="style-products.html" class="short-gallery-products__link link-button">View producer’s page</a></div>
+      </div>
+    </section>
+
+
+    <div class="container">
+      <div class="split-line split-line_margin_common"></div>
+    </div>
+
+    <section class="short-gallery-products">
+      <div class="container">
+        <h2 class="short-gallery-products__title heading_big">More similar products</h2>`
+        <div class="short-gallery-products__content">
+          <ul class="short-gallery-products__products-list">
+            <li class="short-gallery-products__products-item product-card">
+              <img class="product-card__image" src="images/product-card--image.png" alt="product-image">
+              <a class="product-card__name">This is product’s name</a>
+              <span class="product-card__producer">Crafted by - Arun Magar</span>
+              <span class="product-card__price">$560</span>
+            </li>
+            <li class="short-gallery-products__products-item product-card">
+              <img class="product-card__image" src="images/product-card--image.png" alt="product-image">
+              <a class="product-card__name">This is product’s name a quite long one</a>
+              <span class="product-card__producer">Crafted by - Arun Magar</span>
+              <span class="product-card__price">$5560</span>
+            </li>
+            <li class="short-gallery-products__products-item product-card">
+              <img class="product-card__image" src="images/product-card--image.png" alt="product-image">
+              <a class="product-card__name">This is product’s name</a>
+              <span class="product-card__producer">Crafted by - Arun Magar</span>
+              <span class="product-card__price">$99</span>
+            </li>
+            <li class="short-gallery-products__products-item product-card">
+              <img class="product-card__image" src="images/product-card--image.png" alt="product-image">
+              <a class="product-card__name">Product with discount</a>
+              <span class="product-card__producer">Crafted by - Arun Magar</span>
+              <span class="product-card__price product-card__price_discount">$560</span>
+              <span class="product-card__discount-price">$450</span>
+            </li>
+          </ul>
+          <a href="style-products.html" class="short-gallery-products__link link-button">View more products</a></div>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="split-line split-line_margin_common"></div>
+    </div>
+
+    <section class="loved-producers">
+      <div class="container">
+        <div class="loved-producers__header">
+          <h3 class="loved-producers__title heading_big">Most loved producers</h3>
+          <a href="#" class="loved-producers__link">View All Producers</a>
+        </div>
+        <div class="loved-producers__content">
+          <div class="loved-producers__producer-card producer-card">
+            <div class="producer-card__avatar">
+              <img class="producer-card__avatar-image" src="images/icons/avatar-alt.svg" alt="">
+            </div>
+            <span class="producer-card__producer-name heading_small">Mr. Harka Gurung</span>
+            <span class="producer-card__text">Popular products</span>
+            <div class="producer-card__producer-products">
+              <a class="producer-card__product-link" href="#">
+                <img class="producer-card__product-image" src="images/icons/image-alt.svg" alt="">
+              </a>
+              <a class="producer-card__product-link" href="#">
+                <img class="producer-card__product-image" src="images/icons/image-alt.svg" alt="">
+              </a>
+              <a class="producer-card__product-link" href="#">
+                <img class="producer-card__product-image" src="images/icons/image-alt.svg" alt="">
+              </a>
+              <a class="producer-card__product-link" href="#">
+                <img class="producer-card__product-image" src="images/icons/image-alt.svg" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="loved-producers__producer-card producer-card">
+            <div class="producer-card__avatar">
+              <img class="producer-card__avatar-image" src="images/icons/avatar-alt.svg" alt="">
+            </div>
+            <span class="producer-card__producer-name">Mr. Harka Gurung</span>
+            <span class="producer-card__text">Popular products</span>
+            <div class="producer-card__producer-products">
+              <a class="producer-card__product-link" href="#">
+                <img class="producer-card__product-image" src="images/icons/image-alt.svg" alt="">
+              </a>
+              <a class="producer-card__product-link" href="#">
+                <img class="producer-card__product-image" src="images/icons/image-alt.svg" alt="">
+              </a>
+              <a class="producer-card__product-link" href="#">
+                <img class="producer-card__product-image" src="images/icons/image-alt.svg" alt="">
+              </a>
+              <a class="producer-card__product-link" href="#">
+                <img class="producer-card__product-image" src="images/icons/image-alt.svg" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="loved-producers__producer-card producer-card">
+            <div class="producer-card__avatar">
+              <img class="producer-card__avatar-image" src="images/icons/avatar-alt.svg" alt="">
+            </div>
+            <span class="producer-card__producer-name">Mr. Harka Gurung</span>
+            <span class="producer-card__text">Popular products</span>
+            <div class="producer-card__producer-products">
+              <a class="producer-card__product-link" href="#">
+                <img class="producer-card__product-image" src="images/icons/image-alt.svg" alt="">
+              </a>
+              <a class="producer-card__product-link" href="#">
+                <img class="producer-card__product-image" src="images/icons/image-alt.svg" alt="">
+              </a>
+              <a class="producer-card__product-link" href="#">
+                <img class="producer-card__product-image" src="images/icons/image-alt.svg" alt="">
+              </a>
+              <a class="producer-card__product-link" href="#">
+                <img class="producer-card__product-image" src="images/icons/image-alt.svg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <div class="container">
+      <div class="split-line split-line_margin_common"></div>
+    </div>
+
+
+    <section class="trips">
+      <div class="container trips__container">
+        <h2 class="trips__title heading_big">Our most popular trips</h2>
+        <ul class="trips__list">
+          <li class="trips__item">
+            <div class="showcards__showcard-travel showcard-travel showcards__container_position_left">
+              <div class="showcard-travel__comment comment">
+                <img class="comment__image" src="images/testimonials__author-01.svg" alt="author-image">
+                <div class="comment__content">
+                  <img class="comment__quotes" src="images/icons/quotes.svg" alt="">
+                  <span class="comment__text heading_small">
+                      This is a testimonial related to travel, and some dummy text to make it long.
+                  </span>
+                </div>
+              </div>
+              <div class="showcard-travel__body">
+                <img class="showcard-travel__image" src="images/showcards/room-double-01.png" alt="trip-image">
+                <div class="showcard-travel__helper"></div>
+                <div class="showcard-travel__content">
+                    <span class="showcard-travel__text showcards__text">
+                        This is title of the travel package that is being featured here.
+                    </span>
+                  <a class="showcard-travel__link showcards__link" href="#">Read More</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="trips__item">
+            <div class="showcards__showcard-travel showcard-travel showcards__container_position_left">
+              <div class="showcard-travel__comment comment">
+                <img class="comment__image" src="images/testimonials__author-01.svg" alt="author-image">
+                <div class="comment__content">
+                  <img class="comment__quotes" src="images/icons/quotes.svg" alt="">
+                  <span class="comment__text heading_small">
+                      This is a testimonial related to travel, and some dummy text to make it long.
+                  </span>
+                </div>
+              </div>
+              <div class="showcard-travel__body">
+                <img class="showcard-travel__image" src="images/showcards/room-double-01.png" alt="trip-image">
+                <div class="showcard-travel__helper"></div>
+                <div class="showcard-travel__content">
+                    <span class="showcard-travel__text showcards__text">
+                        This is title of the travel package that is being featured here.
+                    </span>
+                  <a class="showcard-travel__link showcards__link" href="#">Read More</a>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+    <div class="container">
+      <div class="split-line split-line_margin_common"></div>
+    </div>
+
+
+    <section class="showcards">
+      <div class="container showcards__flex-container">
+        <div class="showcards__showcard-section showcard-section showcards__container_position_bottom-right">
+          <div class="showcard-section__helper"></div>
+          <div class="showcard-section__content">
+            <span class="showcard-section__text showcards__text">
+                this section is featuring soul section and some text to make title longer.
+            </span>
+            <a href="#" class="showcard-section__link showcards__link">Read More</a>
+          </div>
+        </div>
+
+        <div class="showcards__showcard-section showcard-section showcards__container_position_bottom-right">
+          <div class="showcard-section__helper"></div>
+          <div class="showcard-section__content">
+            <span class="showcard-section__text showcards__text">
+                this section is featuring soul section and some text to make title longer.
+            </span>
+            <a href="#" class="showcard-section__link showcards__link">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+
+  <footer class="footer container footer_margin-top">
+    <div class="footer__subscribe subscribe">
+      <h2 class="subscribe__title heading_medium">Subscribe to our newsletter</h2>
+      <form action="" class="subscribe__form form">
+        <input type="text" class="form__input" placeholder="Enter your email">
+        <button class="form__button" type="submit">Subscribe</button>
+      </form>
+    </div>
+    <div class="footer__bottom">
+      <a href="#" class="footer__copyright">2017 Copyright information goes here.</a>
+      <ul class="bottom__social social">
+        <li class="social__item">
+          <a href="#" class="social__link"><img src="images/icons/social.svg" alt="icon" class="social__icon"></a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link"><img src="images/icons/social.svg" alt="icon" class="social__icon"></a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link"><img src="images/icons/social.svg" alt="icon" class="social__icon"></a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link"><img src="images/icons/social.svg" alt="icon" class="social__icon"></a>
+        </li>
+      </ul>
+      <a href="#" class="footer__author">Designed by Abhash</a>
+    </div>
+  </footer>
+</div>
+
+
+<script src="js/main.min.js"></script>
 </body>
 </html>

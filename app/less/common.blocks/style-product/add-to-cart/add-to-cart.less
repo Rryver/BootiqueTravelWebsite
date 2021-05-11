@@ -1,0 +1,54 @@
+.add-to-cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 48px 31px 38px;
+    background: @color-theme-extra-light;
+    width: 100%;
+    max-width: 770px;
+
+
+    &__price {
+        .text-common();
+        font-weight: @font-weight-light;
+        font-size: 48px;
+        line-height: 1.208em;
+        color: @color-text-grey;
+    }
+
+    &__quantity {
+        .text-common();
+        .text_letter-spacing_true();
+        font-size: 16px;
+        line-height: 1.1875em;
+        color: @color-text-grey;
+        text-transform: uppercase;
+    }
+
+    &__label {
+
+    }
+
+    &__input {
+        margin-left: 15px;
+        width: 87px;
+        height: 50px;
+        padding: 0 8px;
+        background: #C4C4C4;
+        border: none;
+        font-size: 16px;
+        line-height: 1.1875em;
+        text-transform: uppercase;
+    }
+
+    &__button {
+        .site-link();
+        padding: 0 42px;
+        height: 50px;
+        background: #4F4F4F;
+        color: @color-text-extra-light;
+        margin-left: 57px;
+        border: none;
+        outline: none;
+    }
+}

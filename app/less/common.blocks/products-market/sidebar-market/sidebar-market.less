@@ -2,9 +2,17 @@
     display: inline-block;
     min-width: 270px;
     width: 270px;
-    padding: 22px 28px 54px;
+
+    &__container {
+        background: @color-theme-extra-light;
+        padding: 22px 28px 54px;
+    }
 
     &__market-filter {
         margin-top: 50px;
+
+        &:first-child {
+            margin-top: 0;
+        }
     }
 }

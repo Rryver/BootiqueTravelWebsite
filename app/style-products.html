@@ -63,36 +63,38 @@
     <section class="products-market">
       <div class="products-market__container">
         <aside class="products-market__sidebar-market sidebar-market">
-          <div class="sidebar-market__market-filter market-filter">
-            <h5 class="market-filter__title">Category Filter</h5>
-            <ul class="market-filter__filters-list"></li>
-              <li class="market-filter__filters-item">Category One</li>
-              <li class="market-filter__filters-item">Category Two</li>
-              <li class="market-filter__filters-item">Category Three</li>
-              <li class="market-filter__filters-item">Category Four</li>
-            </ul>
-          </div>
-          <div class="sidebar-market__market-filter market-filter">
-            <h5 class="market-filter__title">Category Filter</h5>
-            <ul class="market-filter__filters-list">
-              <li class="market-filter__filters-item">Less than $50</li>
-              <li class="market-filter__filters-item">$50 - $100</li>
-              <li class="market-filter__filters-item">$101 - $200</li>
-              <li class="market-filter__filters-item">$201 - $300</li>
-              <li class="market-filter__filters-item">$301 and above</li>
-            </ul>
-          </div>
-          <div class="sidebar-market__market-filter market-filter">
-            <h5 class="market-filter__title">Category Filter</h5>
-            <ul class="market-filter__filters-list">
-              <li class="market-filter__filters-item">Filter one</li>
-              <li class="market-filter__filters-item">Filter two</li>
-              <li class="market-filter__filters-item">Filter three</li>
-            </ul>
-          </div>
+          <div class="sidebar-market__container">
+            <div class="sidebar-market__market-filter market-filter">
+              <h5 class="market-filter__title">Category Filter</h5>
+              <ul class="market-filter__filters-list">
+                <li class="market-filter__filters-item">Category One</li>
+                <li class="market-filter__filters-item">Category Two</li>
+                <li class="market-filter__filters-item">Category Three</li>
+                <li class="market-filter__filters-item">Category Four</li>
+              </ul>
+            </div>
+            <div class="sidebar-market__market-filter market-filter">
+              <h5 class="market-filter__title">Category Filter</h5>
+              <ul class="market-filter__filters-list">
+                <li class="market-filter__filters-item">Less than $50</li>
+                <li class="market-filter__filters-item">$50 - $100</li>
+                <li class="market-filter__filters-item">$101 - $200</li>
+                <li class="market-filter__filters-item">$201 - $300</li>
+                <li class="market-filter__filters-item">$301 and above</li>
+              </ul>
+            </div>
+            <div class="sidebar-market__market-filter market-filter">
+              <h5 class="market-filter__title">Category Filter</h5>
+              <ul class="market-filter__filters-list">
+                <li class="market-filter__filters-item">Filter one</li>
+                <li class="market-filter__filters-item">Filter two</li>
+                <li class="market-filter__filters-item">Filter three</li>
+              </ul>
+            </div>
 
-          <div class="sidebar-market__market-filter market-filter">
-            <button class="market-filter__button market-filter__title">Reset Filters</button>
+            <div class="sidebar-market__market-filter market-filter">
+              <button class="market-filter__button market-filter__title">Reset Filters</button>
+            </div>
           </div>
         </aside>
 
@@ -100,7 +102,7 @@
           <ul class="products-market__products-list">
             <li class="products-market__products-item product-card">
               <img class="product-card__image" src="images/product-card--image.png" alt="product-image">
-              <a class="product-card__name">This is product’s name</a>
+              <a class="product-card__name" href="style-single-product.html">This is product’s name</a>
               <span class="product-card__producer">Crafted by - Arun Magar</span>
               <span class="product-card__price">$560</span>
             </li>
@@ -153,17 +155,70 @@
     <section class="loved-producers">
       <div class="container">
         <div class="loved-producers__header">
-          <h3 class="loved-producers__title heading-big"></h3>
+          <h3 class="loved-producers__title heading_big">Most loved producers</h3>
           <a href="#" class="loved-producers__link">View All Producers</a>
         </div>
         <div class="loved-producers__content">
           <div class="loved-producers__producer-card producer-card">
-            <img class="loved-producers__image-avatar" src="" alt="">
-            <span class="loved-producers__producer-name">Mr. Harka Gurung</span>
-            <span class="loved-producers__text">Popular products</span>
-            <div class="loved-producers__producer-products">
-              <a class="loved-producers__product-link" href="#">
-                <img class="loved-producers__product-image" src="" alt="">
+            <div class="producer-card__avatar">
+              <img class="producer-card__avatar-image" src="images/icons/avatar-alt.svg" alt="">
+            </div>
+            <span class="producer-card__producer-name heading_small">Mr. Harka Gurung</span>
+            <span class="producer-card__text">Popular products</span>
+            <div class="producer-card__producer-products">
+              <a class="producer-card__product-link" href="#">
+                <img class="producer-card__product-image" src="images/icons/image-alt.svg" alt="">
+              </a>
+              <a class="producer-card__product-link" href="#">
+                <img class="producer-card__product-image" src="images/icons/image-alt.svg" alt="">
+              </a>
+              <a class="producer-card__product-link" href="#">
+                <img class="producer-card__product-image" src="images/icons/image-alt.svg" alt="">
+              </a>
+              <a class="producer-card__product-link" href="#">
+                <img class="producer-card__product-image" src="images/icons/image-alt.svg" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="loved-producers__producer-card producer-card">
+            <div class="producer-card__avatar">
+              <img class="producer-card__avatar-image" src="images/icons/avatar-alt.svg" alt="">
+            </div>
+            <span class="producer-card__producer-name">Mr. Harka Gurung</span>
+            <span class="producer-card__text">Popular products</span>
+            <div class="producer-card__producer-products">
+              <a class="producer-card__product-link" href="#">
+                <img class="producer-card__product-image" src="images/icons/image-alt.svg" alt="">
+              </a>
+              <a class="producer-card__product-link" href="#">
+                <img class="producer-card__product-image" src="images/icons/image-alt.svg" alt="">
+              </a>
+              <a class="producer-card__product-link" href="#">
+                <img class="producer-card__product-image" src="images/icons/image-alt.svg" alt="">
+              </a>
+              <a class="producer-card__product-link" href="#">
+                <img class="producer-card__product-image" src="images/icons/image-alt.svg" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="loved-producers__producer-card producer-card">
+            <div class="producer-card__avatar">
+              <img class="producer-card__avatar-image" src="images/icons/avatar-alt.svg" alt="">
+            </div>
+            <span class="producer-card__producer-name">Mr. Harka Gurung</span>
+            <span class="producer-card__text">Popular products</span>
+            <div class="producer-card__producer-products">
+              <a class="producer-card__product-link" href="#">
+                <img class="producer-card__product-image" src="images/icons/image-alt.svg" alt="">
+              </a>
+              <a class="producer-card__product-link" href="#">
+                <img class="producer-card__product-image" src="images/icons/image-alt.svg" alt="">
+              </a>
+              <a class="producer-card__product-link" href="#">
+                <img class="producer-card__product-image" src="images/icons/image-alt.svg" alt="">
+              </a>
+              <a class="producer-card__product-link" href="#">
+                <img class="producer-card__product-image" src="images/icons/image-alt.svg" alt="">
               </a>
             </div>
           </div>
@@ -300,6 +355,6 @@
 </div>
 
 
-<script src="js/project.js"></script>
+<script src="js/main.min.js"></script>
 </body>
 </html>

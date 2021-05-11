@@ -1,0 +1,39 @@
+.loved-producers {
+    margin-top: 91px;
+    text-align: center;
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    &__title {
+        display: inline-block;
+    }
+
+    &__link {
+        .site-link();
+        display: inline-block;
+        color: @color-text-dark;
+    }
+
+    &__content {
+        margin-top: 164px;
+    }
+
+    &__producer-card {
+        float: left;
+        margin-right: 30px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
