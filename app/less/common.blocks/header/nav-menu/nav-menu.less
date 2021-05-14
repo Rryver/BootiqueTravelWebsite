@@ -1,4 +1,6 @@
 .nav-menu {
+    position: relative;
+
     &__list {
         display: flex;
         flex-direction: row;
@@ -12,5 +14,69 @@
     &__link {
         .site-link();
         color: @color-text-grey;
+    }
+
+    &_hidden {
+        width: 0 !important;
+    }
+
+    &__button {
+        display: inline-block;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        background: transparent;
+        border: none;
+        color: @color-text-white;
+        padding: 5px;
+
+        &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .nav-menu {
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 250px;
+        height: 100%;
+        text-align: center;
+        background: @color-theme-light-grey;
+        overflow-y: auto;
+        transition: width ease .4s;
+
+        &__list {
+            flex-direction: column;
+            margin-top: 10px;
+
+            &:after {
+                display: block;
+                margin-top: 10px;
+                content: "";
+                height: 1px;
+                background: linear-gradient(to right, @color-theme-light-grey,
+                @color-theme-strong-dark-grey,
+                @color-theme-light-grey);
+            }
+        }
+
+        &__item {
+            display: block;
+            margin-bottom: 5px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        &__link {
+            display: block;
+            padding: 15px 0;
+            color: @color-text-white;
+        }
     }
 }

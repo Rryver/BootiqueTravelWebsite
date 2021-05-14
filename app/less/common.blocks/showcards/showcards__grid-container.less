@@ -14,3 +14,17 @@
     &_position_top-right { grid-area: top-right; }
     &_position_bottom-right { grid-area: bottom-right; }
 }
+
+@media screen and (max-width: 1220px) {
+    .showcards__grid-container {
+        grid-template-areas:    "left"
+                                "left"
+                                "top-right"
+                                "bottom-right";
+        grid-template-columns: 100%;
+        grid-column-gap: 0;
+        grid-template-rows: auto;
+    }
+
+
+}

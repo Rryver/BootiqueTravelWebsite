@@ -13,9 +13,16 @@
         max-width: 403px;
     }
 
+    &__text-container {
+        display: block;
+    }
+
     &__text {
         .text-common();
-        display: block;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow-y: hidden;
         font-size: 15px;
         line-height: 22px;
         color: @color-text-white;
@@ -30,5 +37,13 @@
 
     &__title {
         color: @color-text-white;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .block {
+        &__content {
+            max-width: 100%;
+        }
     }
 }

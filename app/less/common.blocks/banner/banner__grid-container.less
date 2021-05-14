@@ -11,3 +11,14 @@
     &_position_top-right { grid-area: top-right; }
     &_position_bottom-right { grid-area: bottom-right; }
 }
+
+@media screen and (max-width: 850px) {
+    .banner__grid-container {
+        grid-template-areas:    "left"
+                                "top-right"
+                                "bottom-right";
+
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(3, 265px);
+    }
+}

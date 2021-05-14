@@ -1,21 +1,106 @@
 .top {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    //display: flex;
+    //flex-direction: row;
+    //justify-content: space-between;
+    //align-items: center;
     margin-bottom: 66px;
+    text-align: center;
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    &__logo {
+        display: inline-block;
+        margin-right: -162px;
+    }
+
+    &__faq, &__sign-links {
+        padding-top: (@font-size-heading-medium / 2);
+    }
+
+    &__faq {
+        display: inline-block;
+        float: left;
+    }
+
+    &__sign-links {
+        display: inline-block;
+        float: right;
+    }
 
     .top__sign-links > &__link {
         margin-right: 41px;
-    }
 
-    .top__sign-links > &__link:last-child {
-        margin-right: 0;
+        &:last-child {
+            margin-right: 0;
+        }
     }
 
     &__link {
         .site-link();
         display: inline-block;
         color: @color-text-light-grey;
+    }
+
+    &__menu-button {
+        display: inline-block;
+        float: right;
+        background: transparent;
+        border: none;
+        padding: 5px;
+
+        &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+}
+
+@media screen and (max-width: 850px){
+    .top {
+        &__logo {
+            margin-right: -50px;
+        }
+    }
+}
+
+@media screen and (max-width: 750px){
+    .top {
+        &__faq, &__sign-links {
+            display: block;
+            float: none;
+        }
+
+        &__sign-links {
+            margin-top: 25px;
+
+            &:after {
+                content: "";
+                display: block;
+                margin-top: 10px;
+                height: 1px;
+                background: linear-gradient(to right, @color-theme-light-grey,
+                @color-theme-strong-dark-grey,
+                @color-theme-light-grey);
+            }
+        }
+
+        &__faq {
+            margin-top: 10px;
+        }
+
+        &__sign-links > .top__link {
+            margin-right: 0;
+            margin-bottom: 5px;
+            padding: 15px 0;
+        }
+
+        &__link {
+            display: block;
+            color: @color-text-white;
+        }
     }
 }

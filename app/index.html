@@ -18,26 +18,30 @@
 
 
 <header class="header">
-  <div class="header__top top">
-    <a class="top__link" href="#">Faq</a>
-    <h2 class="top__logo logo heading_medium"><a class="logo__link" href="#">Botique Travel Website</a></h2>
-    <div class="top__sign-links">
-      <a class="top__link" href="#">Sign Up</a>
-      <a class="top__link" href="#">Sign In</a>
+  <div class="header__container">
+    <div class="header__top top">
+      <a class="top__link top__faq" href="#">Faq</a>
+      <h2 class="top__logo logo"><a class="logo__link heading_medium" href="#">Botique Travel Website</a></h2>
+      <div class="top__sign-links">
+        <a class="top__link" href="#">Sign Up</a>
+        <a class="top__link" href="#">Sign In</a>
+      </div>
+      <button class="top__menu-button" onclick=openCloseMenu()>qwe</button>
     </div>
+    <nav class="header__nav-menu nav-menu">
+      <button class="nav-menu__button" onclick=openCloseMenu()>Close</button>
+      <ul class="nav-menu__list">
+        <li class="nav-menu__item"><a class="nav-menu__link" href="index.html">Home</a></li>
+        <li class="nav-menu__item"><a class="nav-menu__link" href="travel.html">Travel</a></li>
+        <li class="nav-menu__item"><a class="nav-menu__link" href="style.html">Life Style</a></li>
+        <li class="nav-menu__item"><a class="nav-menu__link" href="#">Soul</a></li>
+        <li class="nav-menu__item"><a class="nav-menu__link" href="#">About</a></li>
+        <li class="nav-menu__item"><a class="nav-menu__link" href="#">Review</a></li>
+        <li class="nav-menu__item"><a class="nav-menu__link" href="#">Stories</a></li>
+        <li class="nav-menu__item"><a class="nav-menu__link" href="#">Contact</a></li>
+      </ul>
+    </nav>
   </div>
-  <nav class="header__nav-menu nav-menu">
-    <ul class="nav-menu__list">
-      <li class="nav-menu__item"><a class="nav-menu__link" href="index.html" >Home</a></li>
-      <li class="nav-menu__item"><a class="nav-menu__link" href="travel.html" >Travel</a></li>
-      <li class="nav-menu__item"><a class="nav-menu__link" href="style.html" >Life Style</a></li>
-      <li class="nav-menu__item"><a class="nav-menu__link" href="#" >Soul</a></li>
-      <li class="nav-menu__item"><a class="nav-menu__link" href="#" >About</a></li>
-      <li class="nav-menu__item"><a class="nav-menu__link" href="#" >Review</a></li>
-      <li class="nav-menu__item"><a class="nav-menu__link" href="#" >Stories</a></li>
-      <li class="nav-menu__item"><a class="nav-menu__link" href="#" >Contact</a></li>
-    </ul>
-  </nav>
 </header>
 
 
@@ -48,31 +52,35 @@
         <div class="banner__block block banner__grid-container_position_left block_theme_light-grey">
           <h2 class="block__title heading_medium">Travel</h2>
           <div class="block__content">
-                <span class="block__text">
-                    A wonderful serenity has taken possession of my entire soul, like these sweet mornings of
-                    spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in
-                    this spot, which was created for the bliss of souls like mine.
-                </span>
+            <p class="block__text">
+              A wonderful serenity has taken possession of my entire soul, like these sweet mornings of
+              spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in
+              this spot, which was created for the bliss of souls like mine.
+              A wonderful serenity has taken possession of my entire soul, like these sweet mornings of
+              spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in
+              this spot, which was created for the bliss of souls like mine.
+            </p>
             <a class="block__link" href="travel.html">Learn more</a>
           </div>
         </div>
         <div class="banner__block block banner__grid-container_position_top-right block_theme_grey">
           <h2 class="block__title heading_medium">Life Style</h2>
           <div class="block__content">
-                <span class="block__text">
-                    I throw myself down among the tall grass by the trickling stream; and, as I lie close
-                    to the earth, a thousand unknown plants are noticed by me.
-                </span>
+            <p class="block__text">
+              I throw myself down among the tall grass by the trickling stream; and, as I lie close
+              to the earth, a thousand unknown plants are noticed by me.
+
+            </p>
             <a class="block__link" href="style.html">Learn more</a>
           </div>
         </div>
         <div class="banner__block block banner__grid-container_position_bottom-right block_tmeme_dark-grey">
           <h2 class="block__title heading_medium">Soul</h2>
           <div class="block__content">
-                <span class="block__text">
-                    A small river named Duden flows by their place and supplies it with the necessary regelialia.
-                    It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
-                </span>
+            <p class="block__text">
+              A small river named Duden flows by their place and supplies it with the necessary regelialia.
+              It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+            </p>
             <a class="block__link" href="#">Learn more</a>
           </div>
         </div>
@@ -83,19 +91,19 @@
     <section class="about about__container">
       <div class="about__content">
         <span class="about__title heading_medium">About Travel Website</span>
-        <span class="about__text">
-            <p>
-                A wonderful serenity has taken possession of my entire soul, like these sweet mornings of
-                spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this
-                spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so
-                absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents.
-            </p>
-            <p>
-                I should be incapable of drawing a single stroke at the present moment; and yet I feel that
-                I never was a greater artist than now. When, while the lovely valley teems with vapour around
-                me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees.
-            </p>
-            </span>
+        <div class="about__text">
+          <p>
+            A wonderful serenity has taken possession of my entire soul, like these sweet mornings of
+            spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this
+            spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so
+            absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents.
+          </p>
+          <p>
+            I should be incapable of drawing a single stroke at the present moment; and yet I feel that
+            I never was a greater artist than now. When, while the lovely valley teems with vapour around
+            me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees.
+          </p>
+        </div>
         <a class="about__link" href="#">Learn More</a>
       </div>
       <div class="about__person-note person-note">
@@ -110,46 +118,48 @@
     </section>
 
 
-    <section class="showcards showcards__grid-container">
-      <div class="showcards__showcard-travel showcard-travel showcards__grid-container_position_left">
-        <div class="showcard-travel__comment comment">
-          <img class="comment__image" src="images/testimonials__author-01.svg" alt="author-image">
-          <div class="comment__content">
-            <img class="comment__quotes" src="images/icons/quotes.svg" alt="">
-            <span class="comment__text heading_small">This is a testimonial related to travel, and some
+    <section class="showcards">
+      <div class="showcards__grid-container">
+        <div class="showcards__showcard-travel showcard-travel showcards__grid-container_position_left">
+          <div class="showcard-travel__comment comment">
+            <img class="comment__image" src="images/testimonials__author-01.svg" alt="author-image">
+            <div class="comment__content">
+              <img class="comment__quotes" src="images/icons/quotes.svg" alt="">
+              <span class="comment__text heading_small">This is a testimonial related to travel, and some
                     dummy text to make it long.</span>
+            </div>
+          </div>
+          <div class="showcard-travel__body">
+            <img src="images/showcards/room-double-01.png" alt="trip-image" class="showcard-travel__image">
+            <div class="showcard-travel__helper"></div>
+            <div class="showcard-travel__content">
+              <span class="showcard-travel__text showcards__text">This is title of the travel package that is being featured here.</span>
+              <a class="showcard-travel__link showcards__link" href="travel-single-page.html">Read More</a>
+            </div>
           </div>
         </div>
-        <div class="showcard-travel__body">
-          <img src="images/showcards/room-double-01.png" alt="trip-image" class="showcard-travel__image">
-          <div class="showcard-travel__helper"></div>
-          <div class="showcard-travel__content">
-            <span class="showcard-travel__text showcards__text">This is title of the travel package that is being featured here.</span>
-            <a class="showcard-travel__link showcards__link" href="travel-single-page.html">Read More</a>
-          </div>
-        </div>
-      </div>
 
-      <div class="showcards__showcard-product showcard-product showcards__grid-container_position_top-right">
-        <div class="showcard-product__left">
-          <img src="images/showcards/product-01.png" alt="product-image.png" class="showcard-product__image">
-          <h3 class="showcard-product__name heading_small">Mr. Harka Gurung</h3>
-        </div>
-        <div class="showcard-product__right">
-          <h3 class="showcard-product__producer-info heading_small">About Producer</h3>
-          <div class="showcard-product__help-container">
+        <div class="showcards__showcard-product showcard-product showcards__grid-container_position_top-right">
+          <div class="showcard-product__left">
+            <img src="images/showcards/product-01.png" alt="product-image.png" class="showcard-product__image">
+            <h3 class="showcard-product__name heading_small">Mr. Harka Gurung</h3>
+          </div>
+          <div class="showcard-product__right">
+            <h3 class="showcard-product__producer-info heading_small">About Producer</h3>
+            <div class="showcard-product__help-container">
                 <span class="showcard-product__text">This is a title to explain the product
                     produced or created by the person on the left.</span>
-            <a class="showcard-product__link showcards__link" href="#">Read More</a>
+              <a class="showcard-product__link showcards__link" href="#">Read More</a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="showcards__showcard-section showcard-section showcards__grid-container_position_bottom-right">
-        <div class="showcard-section__helper"></div>
-        <div class="showcard-section__content">
-          <span class="showcard-section__text showcards__text">this section is featuring soul section and some text to make title longer.</span>
-          <a class="showcard-section__link showcards__link" href="#">Read More</a>
+        <div class="showcards__showcard-section showcard-section showcards__grid-container_position_bottom-right">
+          <div class="showcard-section__helper"></div>
+          <div class="showcard-section__content">
+            <span class="showcard-section__text showcards__text">this section is featuring soul section and some text to make title longer.</span>
+            <a class="showcard-section__link showcards__link" href="#">Read More</a>
+          </div>
         </div>
       </div>
     </section>
@@ -219,7 +229,7 @@
     <div class="footer__subscribe subscribe">
       <h2 class="subscribe__title heading_medium">Subscribe to our newsletter</h2>
       <form action="" class="subscribe__form form">
-        <input type="text" class="form__input" placeholder="Enter your email">
+<!--        <input type="text" class="form__input" placeholder="Enter your email">-->
         <button class="form__button" type="submit">Subscribe</button>
       </form>
     </div>

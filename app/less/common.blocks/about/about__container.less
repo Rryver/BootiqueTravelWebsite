@@ -1,5 +1,15 @@
 .about__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
     max-width: 970px;
     margin: 98px auto;
     padding: 31px 51px 48px 47px;
+}
+
+
+@media screen and (max-width: 850px) {
+    .about__container {
+        flex-direction: column;
+    }
 }
