@@ -2,6 +2,7 @@ let navMenu = document.querySelector(".header__nav-menu");
 
 
 const menuMediaQuery = window.matchMedia("(max-width: 750px)");
+
 function changeHeader(e) {
     if (e.matches) {
         //let navMenu = document.querySelector(".header__nav-menu");

@@ -3,6 +3,7 @@
     //flex-direction: row;
     //justify-content: space-between;
     //align-items: center;
+    position: relative;
     margin-bottom: 66px;
     text-align: center;
 
@@ -46,16 +47,13 @@
     }
 
     &__menu-button {
-        display: inline-block;
-        float: right;
-        background: transparent;
-        border: none;
-        padding: 5px;
-
-        &:hover {
-            cursor: pointer;
-            text-decoration: underline;
-        }
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin-top: auto;
+        margin-bottom: auto;
     }
 }
 
@@ -101,6 +99,10 @@
         &__link {
             display: block;
             color: @color-text-white;
+        }
+
+        &__menu-button {
+            display: flex;
         }
     }
 }
