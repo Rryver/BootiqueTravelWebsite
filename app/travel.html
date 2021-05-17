@@ -18,26 +18,34 @@
 
 
 <header class="header">
-  <div class="header__top top">
-    <a class="top__link" href="#">Faq</a>
-    <h2 class="top__logo logo heading_medium"><a class="logo__link" href="#">Botique Travel Website</a></h2>
-    <div class="top__sign-links">
-      <a class="top__link" href="#">Sign Up</a>
-      <a class="top__link" href="#">Sign In</a>
+  <div class="header__container">
+    <div class="header__top top">
+      <a class="top__link top__faq" href="#">Faq</a>
+      <h2 class="top__logo logo"><a class="logo__link heading_medium" href="#">Botique Travel Website</a></h2>
+      <div class="top__sign-links">
+        <a class="top__link" href="#">Sign Up</a>
+        <a class="top__link" href="#">Sign In</a>
+      </div>
+      <button class="top__menu-button button-hamburger" onclick=openCloseMenu()>
+        <div class="button-hamburger__line"></div>
+        <div class="button-hamburger__line"></div>
+        <div class="button-hamburger__line"></div>
+      </button>
     </div>
+    <nav class="header__nav-menu nav-menu">
+      <button class="nav-menu__button" onclick=openCloseMenu()>&times;</button>
+      <ul class="nav-menu__list">
+        <li class="nav-menu__item"><a class="nav-menu__link" href="index.html">Home</a></li>
+        <li class="nav-menu__item"><a class="nav-menu__link" href="travel.html">Travel</a></li>
+        <li class="nav-menu__item"><a class="nav-menu__link" href="style.html">Life Style</a></li>
+        <li class="nav-menu__item"><a class="nav-menu__link" href="#">Soul</a></li>
+        <li class="nav-menu__item"><a class="nav-menu__link" href="#">About</a></li>
+        <li class="nav-menu__item"><a class="nav-menu__link" href="#">Review</a></li>
+        <li class="nav-menu__item"><a class="nav-menu__link" href="#">Stories</a></li>
+        <li class="nav-menu__item"><a class="nav-menu__link" href="#">Contact</a></li>
+      </ul>
+    </nav>
   </div>
-  <nav class="header__nav-menu nav-menu">
-    <ul class="nav-menu__list">
-      <li class="nav-menu__item"><a class="nav-menu__link" href="index.html">Home</a></li>
-      <li class="nav-menu__item"><a class="nav-menu__link" href="travel.html">Travel</a></li>
-      <li class="nav-menu__item"><a class="nav-menu__link" href="style.html">Life Style</a></li>
-      <li class="nav-menu__item"><a class="nav-menu__link" href="#">Soul</a></li>
-      <li class="nav-menu__item"><a class="nav-menu__link" href="#">About</a></li>
-      <li class="nav-menu__item"><a class="nav-menu__link" href="#">Review</a></li>
-      <li class="nav-menu__item"><a class="nav-menu__link" href="#">Stories</a></li>
-      <li class="nav-menu__item"><a class="nav-menu__link" href="#">Contact</a></li>
-    </ul>
-  </nav>
 </header>
 
 
@@ -77,6 +85,7 @@
                 <div class="comment__content">
                   <img class="comment__quotes" src="images/icons/quotes.svg" alt="">
                   <span class="comment__text heading_small">
+                      This is a testimonial related to travel, and some dummy text to make it long.
                       This is a testimonial related to travel, and some dummy text to make it long.
                   </span>
                 </div>
@@ -173,7 +182,7 @@
 
 
     <section class="showcards">
-      <div class="container showcards__flex-container">
+      <div class="showcards__flex-container">
         <div class="showcards__showcard-product showcard-product showcards__container_position_top-right">
           <div class="showcard-product__left">
             <img src="images/showcards/product-01.png" alt="product-image.png" class="showcard-product__image">
@@ -205,35 +214,44 @@
   </main>
 
 
-  <footer class="footer container footer_margin-top">
-    <div class="footer__subscribe subscribe">
-      <h2 class="subscribe__title heading_medium">Subscribe to our newsletter</h2>
-      <form action="" class="subscribe__form form">
-        <input type="text" class="form__input" placeholder="Enter your email">
-        <button class="form__button" type="submit">Subscribe</button>
-      </form>
-    </div>
-    <div class="footer__bottom">
-      <a href="#" class="footer__copyright">2017 Copyright information goes here.</a>
-      <ul class="bottom__social social">
-        <li class="social__item">
-          <a href="#" class="social__link"><img src="images/icons/social.svg" alt="icon" class="social__icon"></a>
-        </li>
-        <li class="social__item">
-          <a href="#" class="social__link"><img src="images/icons/social.svg" alt="icon" class="social__icon"></a>
-        </li>
-        <li class="social__item">
-          <a href="#" class="social__link"><img src="images/icons/social.svg" alt="icon" class="social__icon"></a>
-        </li>
-        <li class="social__item">
-          <a href="#" class="social__link"><img src="images/icons/social.svg" alt="icon" class="social__icon"></a>
-        </li>
-      </ul>
-      <a href="#" class="footer__author">Designed by Abhash</a>
+  <footer class="footer footer_margin-top">
+    <div class="container">
+      <div class="footer__subscribe subscribe">
+        <h2 class="subscribe__title heading_medium">Subscribe to our newsletter</h2>
+        <form action="" class="subscribe__form form">
+          <input type="text" class="form__input" placeholder="Enter your email">
+          <button class="form__button" type="submit">Subscribe</button>
+        </form>
+      </div>
+      <div class="footer__bottom">
+        <a href="#" class="footer__copyright">2017 Copyright information goes here.</a>
+        <ul class="bottom__social social">
+          <li class="social__item">
+            <a href="#" class="social__link"><img src="images/icons/social.svg" alt="icon" class="social__icon"></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link"><img src="images/icons/social.svg" alt="icon" class="social__icon"></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link"><img src="images/icons/social.svg" alt="icon" class="social__icon"></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link"><img src="images/icons/social.svg" alt="icon" class="social__icon"></a>
+          </li>
+        </ul>
+        <a href="#" class="footer__author">Designed by Abhash</a>
+      </div>
     </div>
   </footer>
 </div>
 
+
+<div id="modal-trip" class="modal-trip">
+  <div class="modal-trip__container">
+    <div class="modal-trip__content"></div>
+    <span class="modal-trip__button-close">&times;</span>
+  </div>
+</div>
 
 <script src="js/main.min.js"></script>
 </body>

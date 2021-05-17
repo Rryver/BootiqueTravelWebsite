@@ -2,8 +2,10 @@
 
 
     &__showcard-travel {}
-    &__showcard-product {}
-    &__showcard-section {}
+    &__showcard-product,
+    &__showcard-section {
+        flex: 45%;
+    }
 }
 
 @media screen and (max-width: 1220px) {
@@ -14,5 +16,12 @@
             margin-left: auto;
             margin-right: auto;
         }
+    }
+}
+
+
+@media screen and (max-width: 750px) {
+    .showcards {
+
     }
 }

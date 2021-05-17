@@ -4,10 +4,14 @@
 
     &__list {
         margin-top: 68px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     &__item {
         display: inline-block;
+        flex: 45%;
 
 
         &:nth-child(odd) {
@@ -18,5 +22,22 @@
         &:nth-last-of-type(-n+2) {
              margin-bottom: 0px;
          }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .trips {
+        &__item {
+            flex: 100%;
+            margin-bottom: 50px;
+
+            &:nth-child(odd) {
+                margin-right: 0;
+                margin-bottom: 50px;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
     }
 }

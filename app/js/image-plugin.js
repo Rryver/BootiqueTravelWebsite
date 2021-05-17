@@ -30,7 +30,8 @@ function setSlidesVisibility(oldIndex, newIndex) {
     scrollImageList(images[slideIndex]);
 }
 
-//TODO Add right x position after scrolling. Add smooth scroll
+//TODO Add right x position after scrolling
+//TODO Add smooth scroll
 function scrollImageList(toElement) {
     let imgList = document.querySelector(".images-plugin__container");
     let leftBorder = getPosition(document.querySelector(".trip__images-plugin"));

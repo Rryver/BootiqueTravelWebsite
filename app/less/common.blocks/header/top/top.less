@@ -57,23 +57,18 @@
     }
 }
 
-@media screen and (max-width: 850px){
-    .top {
-        &__logo {
-            margin-right: -50px;
-        }
-    }
-}
-
 @media screen and (max-width: 750px){
     .top {
+        margin-bottom: 0;
+        text-align: left;
+
         &__faq, &__sign-links {
             display: block;
             float: none;
         }
 
         &__sign-links {
-            margin-top: 25px;
+            margin-top: 45px;
 
             &:after {
                 content: "";
@@ -104,5 +99,19 @@
         &__menu-button {
             display: flex;
         }
+    }
+}
+
+@media screen and (max-width: 450px){
+    .logo__link {
+        font-size: 20px;
+        line-height: 27px;
+    }
+}
+
+@media screen and (max-width: 280px){
+    .logo__link {
+        font-size: 15px;
+        line-height: 20px;
     }
 }

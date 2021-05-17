@@ -43,7 +43,8 @@ function scripts() {
     return src([
         'node_modules/jquery/dist/jquery.js',
         'app/js/main.js',
-        'app/js/image-plugin.js'
+        'app/js/image-plugin.js',
+        'app/js/modal-trip.js'
     ])
         .pipe(concat('main.min.js'))
         .pipe(uglify())

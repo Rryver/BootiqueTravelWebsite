@@ -1,5 +1,5 @@
 .form {
-    display: inline-block;  
+    display: inline-block;
 
     &__input {
         .text-common();
@@ -20,5 +20,41 @@
         width: 176px;
         vertical-align: bottom;
         margin-left: -4px;
+    }
+}
+
+
+@media screen and (max-width: 1150px) {
+    .form__input {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .form__input {
+        width: 444px;
+    }
+}
+
+@media screen and (max-width: 755px) {
+    .form__input {
+        width: 250px;
+    }
+}
+
+
+@media screen and (max-width: 560px) {
+    .form {
+        width: 100%;
+
+        &__input {
+            display: block;
+            width: 100%;
+        }
+
+        &__button {
+            margin-left: 0;
+            width: 100%;
+        }
     }
 }

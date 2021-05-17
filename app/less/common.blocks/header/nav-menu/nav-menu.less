@@ -16,19 +16,20 @@
         color: @color-text-grey;
     }
 
-    &_hidden {
-        width: 0 !important;
+    &_visible {
+        width: 250px !important;
     }
 
     &__button {
         display: inline-block;
         position: absolute;
-        top: 5px;
-        left: 5px;
+        top: 0px;
+        left: 10px;
         background: transparent;
         border: none;
+        font-size: 38px;
         color: @color-text-white;
-        padding: 5px;
+        padding: 10px 15px;
 
         &:hover {
             cursor: pointer;
@@ -42,7 +43,7 @@
         position: fixed;
         right: 0;
         top: 0;
-        width: 250px;
+        width: 0px;
         height: 100%;
         text-align: center;
         background: @color-theme-light-grey;
@@ -58,9 +59,11 @@
                 margin-top: 10px;
                 content: "";
                 height: 1px;
-                background: linear-gradient(to right, @color-theme-light-grey,
-                @color-theme-strong-dark-grey,
-                @color-theme-light-grey);
+                background: linear-gradient(
+                        to right,
+                        @color-theme-light-grey,
+                        @color-theme-strong-dark-grey,
+                        @color-theme-light-grey);
             }
         }
 

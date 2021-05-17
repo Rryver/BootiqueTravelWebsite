@@ -8,9 +8,30 @@
 
     &__title {
         display: inline-block;
-        margin-right: 98px;
+        margin-right: 20px;
         color: @color-text-dark;
     }
 
-    &__form {}
+    &__form {
+
+    }
+}
+
+
+@media screen and (max-width: 950px) {
+    .subscribe {
+        flex-direction: column;
+
+        &__form {
+            margin-top: 30px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 560px) {
+    .subscribe__title {
+        font-size: 25px;
+        line-height: 34px;
+    }
 }
