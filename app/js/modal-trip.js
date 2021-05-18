@@ -5,7 +5,6 @@ window.onload = addListenersToComments();
 
 function addListenersToComments() {
     let comments = document.getElementsByClassName("comment__content");
-    console.log(comments);
     [...comments].forEach(
         (element) => {
             element.addEventListener("click", openModal);

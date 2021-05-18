@@ -1,14 +1,15 @@
 .card-producer {
     display: flex;
-    position: relative;
     flex-direction: row;
+    position: relative;
     height: 444px;
+    max-width: 770px;
 
 
     &__image-container {
         display: inline-block;
         position: relative;
-        width: 300px;
+        width: 39%; //300px
         height: 100%;
         background: #E0E0E0;
     }
@@ -23,9 +24,17 @@
         margin: auto;
     }
 
+    &__image-avatar {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        z-index: 2;
+    }
+
     &__content {
         display: inline-block;
-        width: 470px;
+        width: 61%; //470px
         padding: 17px 22px 20px 19px;
         background: @color-theme-extra-light;
 
@@ -58,5 +67,24 @@
 
     &__popular-products-mini {
         margin-top: 52px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .card-producer {
+        flex-direction: column;
+        height: auto;
+
+        &__image-container {
+            display: block;
+            width: 100%;
+            height: auto;
+            //min-height: 200px;
+            min-height: 100px;
+        }
+
+        &__content {
+            width: 100%;
+        }
     }
 }

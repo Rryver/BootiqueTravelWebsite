@@ -1,5 +1,8 @@
-let navMenu = document.querySelector(".header__nav-menu");
+window.onloadend = document.querySelector(".top__menu-button").addEventListener("click", openCloseMenu);
+window.onloadend = document.querySelector(".nav-menu__button").addEventListener("click", openCloseMenu);
 
+
+let navMenu = document.querySelector(".header__nav-menu");
 
 const mediaSmallScreen = window.matchMedia("(max-width: 750px)");
 const mediaDesktopScreen = window.matchMedia("(min-width: 751px)");

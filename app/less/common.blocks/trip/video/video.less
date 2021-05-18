@@ -6,12 +6,13 @@
 
     &__player-container {
         display: none;
+        height: 500px;
     }
     &__player {}
 
     &__alt {
         background: @color-theme-light-grey;
-        height: 500px;
+        height: 100%;
         border-radius: 10px;
     }
 
@@ -23,5 +24,14 @@
         left: 0;
         right: 0;
         margin: auto;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .video {
+        &__player-container, &__alt {
+            height: 300px;
+        }
     }
 }

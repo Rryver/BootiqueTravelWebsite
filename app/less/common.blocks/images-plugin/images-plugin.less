@@ -37,9 +37,9 @@
         cursor: pointer;
         position: absolute;
         top: 50%;
+        //margin-bottom: ;
         width: auto;
         padding: 16px;
-        margin-top: -50px;
         color: #FFFFFF;
         font-weight: bold;
         font-size: 20px;
@@ -105,4 +105,16 @@
         }
     }
     &__image_small {}
+}
+
+@media screen and (max-width: 600px) {
+    .images-plugin__slide {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .images-plugin__slide {
+        height: 200px;
+    }
 }

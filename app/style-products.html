@@ -26,14 +26,14 @@
         <a class="top__link" href="#">Sign Up</a>
         <a class="top__link" href="#">Sign In</a>
       </div>
-      <button class="top__menu-button button-hamburger" onclick=openCloseMenu()>
+      <button class="top__menu-button button-hamburger">
         <div class="button-hamburger__line"></div>
         <div class="button-hamburger__line"></div>
         <div class="button-hamburger__line"></div>
       </button>
     </div>
     <nav class="header__nav-menu nav-menu">
-      <button class="nav-menu__button" onclick=openCloseMenu()>Close</button>
+      <button class="nav-menu__button">&times;</button>
       <ul class="nav-menu__list">
         <li class="nav-menu__item"><a class="nav-menu__link" href="index.html">Home</a></li>
         <li class="nav-menu__item"><a class="nav-menu__link" href="travel.html">Travel</a></li>
@@ -71,6 +71,10 @@
     <section class="products-market">
       <div class="products-market__container">
         <aside class="products-market__sidebar-market sidebar-market">
+          <div class="sidebar-market__header">
+            <h4 class="sidebar-market__title heading_small">Filters</h4>
+            <img class="sidebar-market__filter-icon" src="images/icons/filter_list_black_24dp.svg" alt="filters">
+          </div>
           <div class="sidebar-market__container">
             <div class="sidebar-market__market-filter market-filter">
               <h5 class="market-filter__title">Category Filter</h5>
@@ -192,7 +196,7 @@
             <div class="producer-card__avatar">
               <img class="producer-card__avatar-image" src="images/icons/avatar-alt.svg" alt="">
             </div>
-            <span class="producer-card__producer-name">Mr. Harka Gurung</span>
+            <span class="producer-card__producer-name heading_small">Mr. Harka Gurung</span>
             <span class="producer-card__text">Popular products</span>
             <div class="producer-card__producer-products">
               <a class="producer-card__product-link" href="#">
@@ -213,7 +217,7 @@
             <div class="producer-card__avatar">
               <img class="producer-card__avatar-image" src="images/icons/avatar-alt.svg" alt="">
             </div>
-            <span class="producer-card__producer-name">Mr. Harka Gurung</span>
+            <span class="producer-card__producer-name heading_small">Mr. Harka Gurung</span>
             <span class="producer-card__text">Popular products</span>
             <div class="producer-card__producer-products">
               <a class="producer-card__product-link" href="#">
@@ -364,5 +368,6 @@
 
 
 <script src="js/main.min.js"></script>
+<script src="js/market-filter.js"></script>
 </body>
 </html>

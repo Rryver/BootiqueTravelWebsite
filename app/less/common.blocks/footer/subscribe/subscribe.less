@@ -11,18 +11,21 @@
         margin-right: 20px;
         color: @color-text-dark;
     }
-
-    &__form {
-
-    }
 }
 
 
 @media screen and (max-width: 950px) {
     .subscribe {
-        flex-direction: column;
+        display: block;
+        text-align: center;
+
+        &__title {
+            display: block;
+            margin-right: 0;
+        }
 
         &__form {
+            display: block;
             margin-top: 30px;
         }
     }
@@ -30,8 +33,16 @@
 }
 
 @media screen and (max-width: 560px) {
-    .subscribe__title {
-        font-size: 25px;
-        line-height: 34px;
+    .subscribe {
+        padding-left: 15px;
+        padding-right: 15px;
+
+        &__title {
+            font-size: 25px;
+            line-height: 34px;
+        }
     }
+}
+
+@media screen and (max-width: 400px) {
 }

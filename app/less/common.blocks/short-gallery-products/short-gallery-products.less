@@ -9,23 +9,23 @@
     &__title {}
 
     &__products-list {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
         margin-top: 82px;
     }
 
     &__products-item {
         display: inline-block;
-        margin-right: 25px;
+        flex: 21%;
+        max-width: 25%;
+        margin-right: 30px;
         vertical-align: top;
 
         &:last-child {
             margin-bottom: 0;
             margin-right: 0;
         }
-
-        //Uncomment this, if you want 6 product-items
-        //&:nth-child(3n+3) {
-        //    margin-right: 0;
-        //}
     }
 
     &__link {
@@ -33,56 +33,38 @@
     }
 }
 
-
-@media screen and (max-width: 1215px) {
+@media screen and (max-width: 750px) {
     .short-gallery-products {
-
-        &__products-list {
-            width: 65%;
-            margin: 0 auto;
-            text-align: center;
-        }
-
         &__products-item {
+            flex: 46%;
+            max-width: 50%;
+
             &:nth-child(even) {
                 margin-right: 0;
+                margin-bottom: 30px;
             }
-
-            &:nth-child(-n+2) {
-                margin-bottom: 25px;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 940px) {
-    .popular-products__products-list {
-        width: 80%;
-    }
-}
-
-@media screen and (max-width: 780px) {
-    .popular-products__products-list {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 620px) {
-    .short-gallery-products {
-
-        &__products-list {
-            width: 90%;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        &__products-item {
-            margin-right: 0;
-            margin-bottom: 30px;
 
             &:last-child {
                 margin-bottom: 0;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .short-gallery-products__products-list {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .short-gallery-products {
+        &__products-item {
+            flex: 95%;
+            max-width: 100%;
+
+            margin-right: 0;
+            margin-bottom: 30px;
         }
     }
 }

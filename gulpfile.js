@@ -41,10 +41,11 @@ function images() {
 
 function scripts() {
     return src([
-        'node_modules/jquery/dist/jquery.js',
+        //'node_modules/jquery/dist/jquery.js',
         'app/js/main.js',
         'app/js/image-plugin.js',
-        'app/js/modal-trip.js'
+        'app/js/modal-trip.js',
+        'app/js/header.js'
     ])
         .pipe(concat('main.min.js'))
         .pipe(uglify())

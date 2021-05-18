@@ -2,10 +2,15 @@
     display: inline-block;
     min-width: 270px;
     width: 270px;
+    float: left;
+    background: @color-theme-extra-light;
 
     &__container {
-        background: @color-theme-extra-light;
         padding: 22px 28px 54px;
+
+        &_hidden {
+            display: none !important;
+        }
     }
 
     &__market-filter {
@@ -13,6 +18,86 @@
 
         &:first-child {
             margin-top: 0;
+        }
+    }
+
+    &__header {
+        padding: 15px;
+        border: 1px solid @color-theme-grey;
+        box-shadow: 0 2px 3px -2px grey;
+
+        &:hover {
+            cursor: pointer;
+            background: @color-theme-light-grey;
+        }
+    }
+
+    &__title {
+        display: inline-block;
+    }
+
+    &__filter-icon {
+        display: inline-block;
+        float: right;
+        padding-top: 4px;
+    }
+}
+
+
+@media screen and (max-width: 750px) {
+    .sidebar-market {
+        float: none;
+        display: block;
+        width: 100%;
+
+        &__container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            padding: 22px 5px;
+        }
+
+        &:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        &__market-filter {
+            display: inline-block;
+            text-align: center;
+            margin-top: 0;
+            padding-left: 10px;
+            padding-right: 10px;
+            flex: 33%;
+            max-width: 33%;
+
+            &:last-child {
+                display: contents;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .sidebar-market {
+
+        &__container {
+            display: block;
+        }
+
+        &__market-filter {
+            display: block;
+            margin-bottom: 50px;
+            max-width: 100%;
+
+            &:last-child {
+                display: block;
+                text-align: center;
+                margin-bottom: 0;
+            }
         }
     }
 }

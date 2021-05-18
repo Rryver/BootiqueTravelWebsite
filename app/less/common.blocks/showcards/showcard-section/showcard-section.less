@@ -1,7 +1,7 @@
 .showcard-section {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-end;
     background-image: url("../../images/showcards/section-soul.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -10,14 +10,17 @@
     max-width: 540px;
     min-height: 252px;
 
-    &__helper {}
     &__content {
         text-align: left;
     }
 
     &__text {
         display: block;
+        max-height: 130px;
+        overflow-y: scroll;
+        //display: -webkit-box;
+        //-webkit-line-clamp: 6;
+        //-webkit-box-orient: vertical;
+        //overflow-y: auto;
     }
-
-    &__link {}
 }
