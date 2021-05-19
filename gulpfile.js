@@ -43,7 +43,7 @@ function scripts() {
     return src([
         //'node_modules/jquery/dist/jquery.js',
         'app/js/main.js',
-        'app/js/image-plugin.js',
+        //'app/js/image-plugin.js',
         'app/js/modal-trip.js',
         'app/js/header.js'
     ])
@@ -55,18 +55,8 @@ function scripts() {
 
 
 function styles() {
-    // return src('app/less/style.less')
-    //     .pipe(less({outputStyle: 'compressed'}))
-    //     .pipe(concat('style.min.css'))
-    //     .pipe(autoprefixer({
-    //       overrideBrowserslist: ['last 10 version'],
-    //       grid: true
-    //     }))
-    //     .pipe(dest('app/css'))
-    //     .pipe(browserSync.stream())
     return src('app/less/style.less')
         .pipe(less())
-        // .pipe(concat('style.min.css'))
         .pipe(autoprefixer({
             overrideBrowserslist: ['last 10 version'],
             grid: true

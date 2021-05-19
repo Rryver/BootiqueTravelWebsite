@@ -1,8 +1,8 @@
 let slideIndex = 0;
+let imgListContainer = document.querySelector(".images-plugin__container");
+let imgList = document.querySelector(".images-plugin__images-list");
+window.onloadend = changeImagesContainerHeight();
 
-
-// let imgs = document.getElementsByClassName("images-plugin__images-item");
-// imgs.scroll(50);
 
 function showSelectedSlide(element) {
     let slides = [...element.parentElement.children];
@@ -33,29 +33,27 @@ function setSlidesVisibility(oldIndex, newIndex) {
 //TODO Add right x position after scrolling
 //TODO Add smooth scroll
 function scrollImageList(toElement) {
-    let imgList = document.querySelector(".images-plugin__container");
     let leftBorder = getPosition(document.querySelector(".trip__images-plugin"));
-    let rightBorder = imgList.offsetWidth;
-    // console.log("lisLeftB:  " + leftBorder);
-    // console.log("listRightB:  " + rightBorder);
+    let rightBorder = imgListContainer.offsetWidth;
     let imageXPos = getPosition(toElement) - leftBorder;
-    // console.log("left:  " + imageXPos);
 
 
-    let offset = 200;
+    //let offset = 200;
+    let offset = rightBorder * 0.25;
     if (imageXPos < leftBorder + toElement.offsetWidth) {
-        imgList.scrollLeft -= offset;
+        imgListContainer.scrollLeft -= offset;
     }
     if (imageXPos > rightBorder - toElement.offsetWidth - 30) {
-        imgList.scrollLeft += offset;
+        imgListContainer.scrollLeft += offset;
     }
 }
 
 
+window.addEventListener("resize", changeImagesContainerHeight);
+function changeImagesContainerHeight() {
+    imgListContainer.style.height = (imgList.offsetHeight + 17) + "px";
+}
 
-// console.log("container:  " + getPosition(document.querySelector(".images-plugin__container")));
-// console.log("list:  " + getPosition(document.querySelector(".images-plugin__images-list")));
-// console.log("item 2:  " + getPosition(document.getElementsByClassName("images-plugin__images-item")[0]));
 
 // Helper function to get an element's exact position
 function getPosition(el) {

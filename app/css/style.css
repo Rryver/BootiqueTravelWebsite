@@ -645,6 +645,7 @@ body {
   .stories__item {
     width: 100%;
     margin-right: 0;
+    margin-top: 50px;
   }
 }
 .card {
@@ -1099,7 +1100,7 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  background-image: url("../../images/showcards/section-soul.png");
+  background-image: url("../images/showcards/section-soul.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1522,6 +1523,7 @@ body {
 .images-plugin__images-item {
   display: inline-block;
   width: 22%;
+  min-width: 80px;
   height: auto;
   scroll-snap-align: start;
   margin-right: 2px;
@@ -1553,6 +1555,12 @@ body {
 }
 .images-plugin__image_big:hover {
   cursor: default;
+}
+.images-plugin__image_small {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 100%;
+  width: 100%;
 }
 @media screen and (max-width: 600px) {
   .images-plugin__slide {
@@ -2109,6 +2117,7 @@ body {
   margin-top: 0;
 }
 .sidebar-market__header {
+  display: none;
   padding: 15px;
   border: 1px solid #B0B0B0;
   -webkit-box-shadow: 0 2px 3px -2px grey;
@@ -2131,6 +2140,9 @@ body {
     float: none;
     display: block;
     width: 100%;
+  }
+  .sidebar-market__header {
+    display: block;
   }
   .sidebar-market__container {
     display: -webkit-box;
@@ -2796,6 +2808,7 @@ body {
   .form__button {
     margin-left: 0;
     width: 100%;
+    max-width: 100%;
   }
 }
 .social {

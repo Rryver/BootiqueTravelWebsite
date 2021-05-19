@@ -66,6 +66,7 @@
     &__images-item {
         display: inline-block;
         width: @image-width-percents;
+        min-width: 80px;
         height: @image-height-auto;
         scroll-snap-align: start;
         margin-right: 2px;
@@ -104,7 +105,11 @@
             cursor: default;
         }
     }
-    &__image_small {}
+    &__image_small {
+        object-fit: contain;
+        height: 100%;
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 600px) {
