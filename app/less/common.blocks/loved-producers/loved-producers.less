@@ -12,6 +12,7 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
+        position: relative;
     }
 
     &__title {
@@ -25,17 +26,45 @@
     }
 
     &__content {
-        margin-top: 164px;
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     &__producer-card {
-        flex: 1 1 30%;
         margin-right: 30px;
+        margin-top: 164px;
 
         &:last-child {
             margin-right: 0;
         }
+    }
+}
+
+
+@media screen and (max-width: 1199px) {
+    .loved-producers__producer-card:nth-child(even) {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .loved-producers {
+        &__content {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__producer-card {
+            margin-right: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .loved-producers__link {
+        position: absolute;
+        right: 0;
+        bottom: -25px;
     }
 }

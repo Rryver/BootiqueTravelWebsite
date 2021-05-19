@@ -1,7 +1,7 @@
 .producer-card {
     display: inline-block;
     position: relative;
-    width: 370px;
+    max-width: 370px;
     //height: 558px;
     text-align: center;
     background: @color-theme-extra-light;
@@ -50,7 +50,7 @@
     }
 
     &__product-link {
-        flex: 30%;
+        flex: 1 1 49%;
         background: #C4C4C4;
         display: inline-block;
         position: relative;
@@ -76,5 +76,14 @@
         left: 0;
         margin: auto;
         object-fit: contain;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .producer-card {
+        &__product-link {
+            min-width: 130px;
+            min-height: 130px;
+        }
     }
 }

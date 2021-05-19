@@ -114,7 +114,7 @@ body {
   font-style: normal;
   letter-spacing: 0.25em;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.167em;
   text-transform: uppercase;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -161,21 +161,21 @@ body {
   font-weight: 400;
   font-style: italic;
   font-size: 52px;
-  line-height: 69px;
+  line-height: 1.327em;
 }
 .heading_medium {
   font-family: 'Playfair Display', serif;
   font-weight: 400;
   font-style: italic;
   font-size: 32px;
-  line-height: 43px;
+  line-height: 1.344em;
 }
 .heading_small {
   font-family: 'Playfair Display', serif;
   font-weight: 400;
   font-style: italic;
   font-size: 20px;
-  line-height: 27px;
+  line-height: 1.35em;
 }
 .site-link {
   font-family: 'Lato', sans-serif;
@@ -183,7 +183,7 @@ body {
   font-style: normal;
   letter-spacing: 0.25em;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.167em;
   text-transform: uppercase;
 }
 .site-link:hover {
@@ -196,7 +196,7 @@ body {
     font-weight: 400;
     font-style: italic;
     font-size: 32px;
-    line-height: 43px;
+    line-height: 1.344em;
   }
 }
 .header__container {
@@ -228,7 +228,7 @@ body {
   font-style: normal;
   letter-spacing: 0.25em;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.167em;
   text-transform: uppercase;
   color: #828282;
 }
@@ -365,7 +365,7 @@ body {
   font-style: normal;
   letter-spacing: 0.25em;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.167em;
   text-transform: uppercase;
   display: inline-block;
   color: #BDBDBD;
@@ -426,13 +426,13 @@ body {
 @media screen and (max-width: 450px) {
   .logo__link {
     font-size: 20px;
-    line-height: 27px;
+    line-height: 1.35em;
   }
 }
 @media screen and (max-width: 280px) {
   .logo__link {
     font-size: 15px;
-    line-height: 20px;
+    line-height: 1.333em;
   }
 }
 .logo {
@@ -453,7 +453,7 @@ body {
   font-style: normal;
   letter-spacing: 0.25em;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.167em;
   text-transform: uppercase;
   display: block;
   text-align: center;
@@ -576,7 +576,7 @@ body {
   -webkit-box-orient: vertical;
   overflow-y: hidden;
   font-size: 15px;
-  line-height: 22px;
+  line-height: 1.466em;
   color: #FFFFFF;
 }
 .block__link {
@@ -585,7 +585,7 @@ body {
   font-style: normal;
   letter-spacing: 0.25em;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.167em;
   text-transform: uppercase;
   display: inline-block;
   margin-top: 18px;
@@ -663,7 +663,7 @@ body {
   font-style: normal;
   letter-spacing: 0.25em;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.167em;
   text-transform: uppercase;
   display: block;
   margin-top: 17px;
@@ -679,7 +679,7 @@ body {
   display: inline-block;
   margin-top: 18px;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.714em;
   color: #828282;
 }
 .about {
@@ -710,7 +710,7 @@ body {
   font-style: normal;
   letter-spacing: 0.25em;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.167em;
   text-transform: uppercase;
   color: #333333;
   display: inline-block;
@@ -798,7 +798,7 @@ body {
   font-style: normal;
   letter-spacing: 0.25em;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.167em;
   text-transform: uppercase;
   display: block;
   color: #333333;
@@ -967,7 +967,7 @@ body {
   font-style: normal;
   letter-spacing: 0.25em;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.167em;
   text-transform: uppercase;
   display: inline-block;
   color: #333333;
@@ -1267,7 +1267,7 @@ body {
   font-style: normal;
   letter-spacing: 0.25em;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.167em;
   text-transform: uppercase;
   display: inline-block;
   font-size: 14px;
@@ -1383,7 +1383,7 @@ body {
   font-style: normal;
   letter-spacing: 0.25em;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.167em;
   text-transform: uppercase;
   max-width: 305px;
   height: 47px;
@@ -1614,7 +1614,7 @@ body {
   font-style: normal;
   letter-spacing: 0.25em;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.167em;
   text-transform: uppercase;
   display: inline-block;
   font-size: 14px;
@@ -1757,7 +1757,7 @@ body {
   font-style: normal;
   letter-spacing: 0.25em;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.167em;
   text-transform: uppercase;
   display: block;
   width: 100%;
@@ -1936,7 +1936,7 @@ body {
   font-style: normal;
   letter-spacing: 0.25em;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.167em;
   text-transform: uppercase;
   display: inline-block;
   margin-top: 35px;
@@ -2250,6 +2250,7 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  position: relative;
 }
 .loved-producers__title {
   display: inline-block;
@@ -2260,7 +2261,7 @@ body {
   font-style: normal;
   letter-spacing: 0.25em;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.167em;
   text-transform: uppercase;
   display: inline-block;
   color: #4F4F4F;
@@ -2270,26 +2271,52 @@ body {
   cursor: pointer;
 }
 .loved-producers__content {
-  margin-top: 164px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .loved-producers__producer-card {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 30%;
-          flex: 1 1 30%;
   margin-right: 30px;
+  margin-top: 164px;
 }
 .loved-producers__producer-card:last-child {
   margin-right: 0;
 }
+@media screen and (max-width: 1199px) {
+  .loved-producers__producer-card:nth-child(even) {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 800px) {
+  .loved-producers__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .loved-producers__producer-card {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 750px) {
+  .loved-producers__link {
+    position: absolute;
+    right: 0;
+    bottom: -25px;
+  }
+}
 .producer-card {
   display: inline-block;
   position: relative;
-  width: 370px;
+  max-width: 370px;
   text-align: center;
   background: #F5F5F5;
 }
@@ -2338,9 +2365,9 @@ body {
   margin-top: 27px;
 }
 .producer-card__product-link {
-  -webkit-box-flex: 30%;
-      -ms-flex: 30%;
-          flex: 30%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 49%;
+          flex: 1 1 49%;
   background: #C4C4C4;
   display: inline-block;
   position: relative;
@@ -2362,6 +2389,12 @@ body {
   -o-object-fit: contain;
      object-fit: contain;
 }
+@media screen and (max-width: 400px) {
+  .producer-card__product-link {
+    min-width: 130px;
+    min-height: 130px;
+  }
+}
 .style-product {
   margin-top: 57px;
 }
@@ -2377,10 +2410,18 @@ body {
 }
 .style-product__add-to-cart {
   margin-top: 27px;
-  float: right;
+}
+.style-product__content {
+  max-width: 770px;
 }
 .style-product__sidebar {
   margin-left: 30px;
+}
+@media screen and (max-width: 850px) {
+  .style-product__sidebar {
+    margin-left: 0;
+    margin-top: 51px;
+  }
 }
 .style-product__container {
   max-width: 1200px;
@@ -2396,6 +2437,17 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+@media screen and (max-width: 850px) {
+  .style-product__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 .add-to-cart {
   display: -webkit-box;
@@ -2421,7 +2473,7 @@ body {
   line-height: 1.208em;
   color: #828282;
 }
-.add-to-cart__quantity {
+.add-to-cart__form {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -2430,6 +2482,7 @@ body {
   line-height: 1.1875em;
   color: #828282;
   text-transform: uppercase;
+  vertical-align: middle;
 }
 .add-to-cart__input {
   margin-left: 15px;
@@ -2441,6 +2494,7 @@ body {
   font-size: 16px;
   line-height: 1.1875em;
   text-transform: uppercase;
+  vertical-align: middle;
 }
 .add-to-cart__button {
   font-family: 'Lato', sans-serif;
@@ -2448,7 +2502,7 @@ body {
   font-style: normal;
   letter-spacing: 0.25em;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.167em;
   text-transform: uppercase;
   padding: 0 42px;
   height: 50px;
@@ -2457,15 +2511,60 @@ body {
   margin-left: 57px;
   border: none;
   outline: none;
+  vertical-align: middle;
 }
 .add-to-cart__button:hover {
   text-decoration: underline;
   cursor: pointer;
 }
+@media screen and (min-width: 851px) and (max-width: 1050px) {
+  .add-to-cart__button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .add-to-cart {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .add-to-cart {
+    padding-left: 15px;
+    padding-right: 15px;
+    display: block;
+    text-align: center;
+  }
+  .add-to-cart__form {
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .add-to-cart__button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    padding: 0 10px;
+    max-width: 224px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 300px) {
+  .add-to-cart__input {
+    display: block;
+    margin-top: 10px;
+    margin-left: 0;
+    width: 100%;
+  }
+}
 .producer-info-card {
   display: inline-block;
   position: relative;
-  width: 370px;
+  min-width: 250px;
+  max-width: 370px;
   text-align: center;
   background: #F5F5F5;
   padding: 0 23px 26px 24px;
@@ -2509,6 +2608,12 @@ body {
   font-size: 15px;
   line-height: 1.6em;
   color: #828282;
+}
+@media screen and (max-width: 850px) {
+  .producer-info-card {
+    max-width: 100%;
+    width: 100%;
+  }
 }
 .footer {
   margin-bottom: 92px;
@@ -2606,7 +2711,7 @@ body {
   }
   .subscribe__title {
     font-size: 25px;
-    line-height: 34px;
+    line-height: 1.36em;
   }
 }
 .form {
@@ -2632,7 +2737,7 @@ body {
   font-style: normal;
   letter-spacing: 0.25em;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.167em;
   text-transform: uppercase;
   display: -webkit-box;
   display: -ms-flexbox;
